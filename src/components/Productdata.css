@@ -1,0 +1,62 @@
+.rowaligmm{
+    display: flex;
+justify-content: space-between;
+align-items: flex-start;
+gap: auto;
+padding:30px 70px;
+}
+
+.divimgdata img{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+}
+.proddatacol{
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    flex-direction: column;
+}
+
+.proddatacol div h6{
+    color: #8F8F8F;
+font-family: Manrope;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 100% */
+letter-spacing: 0.5px;
+}
+.proddatacol div h1{
+    color: #151515;
+font-family: Manrope;
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: 160%; /* 51.2px */
+letter-spacing: 0.5px;
+}
+.spandata{
+    display: flex;
+align-items: flex-start;
+gap: 40px;
+}
+.spandata p{
+    color: #450079;
+font-family: Manrope;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; /* 18px */
+letter-spacing: 0.5px;
+}
+.spandata p b{
+    color: #8F8F8F;
+font-family: Manrope;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 18px */
+letter-spacing: 0.5px;
+gap: 16px;
+}

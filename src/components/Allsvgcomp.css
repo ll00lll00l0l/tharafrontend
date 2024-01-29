@@ -1,0 +1,27 @@
+.productsvg{
+    position: absolute;
+    height: 925.167px;
+    width: 661.323px;
+}
+.underlinne {
+    width: 100%;
+  height: auto; 
+    max-width: 304px;
+  }
+  @media (max-width: 768px) {
+    .underlinne {
+      /* Adjust the styles for smaller screens */
+      max-width: 150px;
+      /* Add other styles as needed */
+    }
+    .underlinne2 {
+      /* Adjust the styles for smaller screens */
+      max-width: 220px;
+      /* Add other styles as needed */
+    }
+    .underlinne3 {
+      /* Adjust the styles for smaller screens */
+      max-width: 300px;
+      /* Add other styles as needed */
+    }
+  }

@@ -1,0 +1,141 @@
+/* Default styles for larger screens */
+form {
+  width: 100%;
+}
+
+.formalignn {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+    margin-bottom: 90px;
+    margin-top: 50px;
+  }
+  
+  .formcontainer {
+    display: flex;
+    padding: 0px 70px;
+    align-items: center;
+  }
+  
+  .formrow {
+    display: flex;
+    width: 1301px;
+    justify-content: space-between;
+    /* align-items: center; */
+  }
+  
+  .formcol {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    border-radius: 10px;
+    background: #F8F8F8;
+  }
+  
+  .formcontrol,
+  .formcontrol2 {
+    display: flex;
+    width: 100%; 
+    /* max-width: 500px;  */
+    padding: 10px 20px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid #B0B0B0;
+    color: #000;
+    text-align: justify;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0.36px;
+  }
+  
+  @media (max-width: 768px) {
+    .formcontrol,
+    .formcontrol2 {
+      flex-direction: column; 
+      width: 100%; 
+    }
+  }
+  
+  .formcontrol2 {
+    height: 127px;
+    align-items: flex-start;
+  }
+  
+  .formlabel {
+    padding-bottom: 8px;
+    color: #000;
+    text-align: justify;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0.36px;
+  }
+  
+  .formcol2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 70px;
+  }
+  
+  @media (max-width: 768px) {
+    .formcol2 {
+      align-items: center;
+      gap: 20px;
+    }
+  }
+  
+  .address {
+    display: flex;
+    align-items: flex-start;
+    gap: 82px;
+  }
+  
+  .address span {
+    display: flex;
+    align-items: flex-end;
+    gap: 24px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .formalignn {
+      gap: 20px;
+      margin-bottom: 50px;
+      margin-top: 30px;
+    }
+  
+    .formcontainer {
+      padding: 0px 30px;
+    }
+  
+    .formrow {
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .formcol,
+    .formcontrol,
+    .formcontrol2,
+    .formlabel {
+      width: 100%;
+    }
+    .formcol2 iframe{
+      width:350px;
+      height:auto;
+    }
+  
+    .address {
+      gap: 20px;
+    }
+  }
+  
