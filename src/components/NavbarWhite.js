@@ -23,7 +23,8 @@ const useNavbar = () => {
         </li>
         <li className={location.pathname.startsWith('/About') ? 'active wnav-menu-dropdown' : ' '}>
           <Link >About Us</Link>
-          <ul className="wnav-dropdown">
+         
+          <ul className="wnav-dropdown"> <div className=''>
         <li className={location.pathname === '/About' ? 'active' : ' '}>
               <Link to="/about">Who We Are</Link>
             </li>
@@ -32,7 +33,7 @@ const useNavbar = () => {
             </li>
         <li className={location.pathname === '/About' ? 'active' : ' '}>
               <Link to="/brand">Brands & Collaboration</Link>
-            </li>
+            </li></div>
           </ul>
         </li>
         <li className={location.pathname === '/Product' ? 'active' : ' '}>

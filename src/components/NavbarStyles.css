@@ -59,15 +59,15 @@
 .sub-menu li{
     display :block
 }
+
 .nav-dropdown {
   display: none;
   position: absolute;
   background: rgba(255, 255, 255, 0.60);
-  backdrop-filter: blur(28px);      
+  /* backdrop-filter: blur(28px);       */
   z-index: 3;
   padding: 10px  ;
   list-style-type: none;
-  margin-top: 20px;
 
 }
 .nav-dropdown li a {

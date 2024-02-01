@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import compimg from '../assets/img/aboutcompimg.png';
+import { Link } from 'react-router-dom';
 
 // Styled components
 const BorderDiv = styled.div`
@@ -78,6 +79,7 @@ const Aboutcomp = () => {
             including confections, biscuits, chocolates, and instant noodles. We trade in domestic and foreign markets,
             and are committed to providing our customers with the highest quality products and services.
             <div className="arrow-container">
+              <Link to='/about'>
         <button className="btn-white">Read More
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +97,7 @@ const Aboutcomp = () => {
           strokeLinejoin="round"
         />
       </svg>
-      </button>
+      </button></Link>
     </div>
           </InnerDiv>
           <div className='col-md-6'>

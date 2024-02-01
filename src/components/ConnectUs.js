@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Star  from './Allsvgcomp.js'; 
+import { Link } from 'react-router-dom';
+
 
   const BorderDiv = styled.div`
   padding: 140.214px 70px;
@@ -66,12 +68,13 @@ export default function ConnectUs() {
     
         <InnerDiv2>
           <div className="arrow-container">
+            <Link to="/">
           <button className="btn-purple">
             Let’s Talk
             <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none" className='arrow'>
               <path d="M17.4016 8L24.6932 15.5M24.6932 15.5L17.4016 23M24.6932 15.5L7.19324 15.5" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-          </button>
+          </button></Link>
         </div>
         </InnerDiv2>
       </AlignmentDiv>

@@ -34,7 +34,7 @@ function AboutUs() {
                       />
                     </svg>
                      </div></div>
-                    <div><span>40 Years</span>
+                    <div className='textcontent'><span>40 Years</span>
                     <p>of Successful Trading</p></div>
                 </div>
                 <div className='grid-child  col-sm-2'>
@@ -59,7 +59,7 @@ function AboutUs() {
                       />
                     </svg>
                      </div></div>
-                    <div><span>05+</span>
+                    <div className='textcontent'><span>05+</span>
                     <p>Thara Companies</p></div>
                 </div>
                 <div className='grid-child2  col-sm-2'>
@@ -84,7 +84,7 @@ function AboutUs() {
                       />
                     </svg>
                      </div></div>
-                    <div><span>More than 20</span>
+                    <div className='textcontent'><span>More than 20</span>
                     <p>International Brands are collaborated with Us</p></div>
                 </div>
               </div>

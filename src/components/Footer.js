@@ -6,7 +6,7 @@ import emailIcon from '../assets/img/entypo_email.png';
 import insta from '../assets/img/insta.png';
 import facebook from '../assets/img/facebook.png';
 import youtube from '../assets/img/youtube.png';
-import { Link } from 'react-router-dom';
+  import { Link } from 'react-router-dom';
 
 
 const FooterWrapper = styled.footer`
@@ -14,11 +14,8 @@ const FooterWrapper = styled.footer`
   background-color: #450079;
   color: #fff;
   position: relative;
-  z-index:-2 ;
   @media (max-width: 768px) {
-    /* Adjust styles for smaller screens */
     padding: 70px 0px 0;
-    /* Add other styles as needed */
   }
 `;
 
@@ -132,7 +129,7 @@ const Attribution = styled.div`
       font-size: 18px; 
        font-style: normal;
       font-weight: 400;
-      line-height: 38.4px; /* 213.333% */
+      line-height: 38.4px; 
       letter-spacing: 0.5px;
     }
   
