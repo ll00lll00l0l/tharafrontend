@@ -12,7 +12,9 @@ const BrodDiv = styled.div`
   display: flex;
   padding: 81px 70px;
 
-
+  @media (max-width: 768px) {
+    padding: 81px 20px;
+  }
 `;
 
 const Outdivv = styled.div`
@@ -107,7 +109,7 @@ const Broddiv2 = styled.div`
   padding: 90px;
 
   @media (max-width: 1040px) {
-    padding: 20px 70px;
+    padding: 20px 20px;
   }
 `;
 
