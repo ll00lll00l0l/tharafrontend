@@ -59,6 +59,8 @@ const ProductDetail = () => {
   useEffect(() => {
     getItemData();
   }, []); // Call getItemData once when the component mounts
+  const newBaseURL = `${baseURL}`;
+  const imagePathWithoutBaseURL = product?.image?.replace('http://0.0.0.0:9090', newBaseURL);
 
   return (
     <div>
@@ -69,7 +71,7 @@ const ProductDetail = () => {
   {product.image && (
             <div className=' divimgdata col-md-6'>
             <img
-              src={product.image}
+              src={imagePathWithoutBaseURL}
               alt={product.name}
               className="img-fluid "
             />
@@ -130,7 +132,7 @@ const ProductDetail = () => {
                   <div key={filteredItem.id} className=''>
                     {filteredItem.image && (
                       <img
-                        src={filteredItem.image}
+                        src={imagePathWithoutBaseURL}
                         alt={filteredItem.name}
                         style={{ width: '150px', height: '100%' }}
                       />

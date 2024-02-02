@@ -83,14 +83,14 @@
     transition: background-color 0.3s ease; /* Add a transition for smooth effect */
   }
   
-  .nav-dropdown li:hover a {
-    background-color: #e0e0e0; /* Change the background color on hover */
+  /* .nav-dropdown li:hover a {
+    background-color: #e0e0e0;
   }
   
   .nav-dropdown li:active a {
-    background-color: #c0c0c0; /* Change the background color on click/active state */
-  }
-  
+    background-color: #c0c0c0;
+ } */
+
   .nav-menu li:hover .nav-dropdown {
     display: block;
     opacity: 1;

@@ -140,20 +140,24 @@ class ProductList extends Component {
             </div>
           </div>
           <div >
-            {isListVisible && (
-              <div className='listprobrod'>
-                {filteredProducts.map((product) => (
-                  <div className='probrod' key={product.id}>
-                  {product.image && (
-                    <img src={product.image} alt={product.name} />
-                  )}
-                  <span>
-                    <Link to={`${product.id}`}>{product.name}</Link>
-                  </span>
-                </div>
-                ))}
-              </div>
-            )}
+          {isListVisible && (
+  <div className='listprobrod'>
+    {filteredProducts.map((product) => {
+      // Removing the base URL from the image path and replacing with the new base URL
+      const newBaseURL = `${baseURL}`;
+      const imagePathWithoutBaseURL = product.image.replace('http://0.0.0.0:9090', newBaseURL);
+
+      return (
+        <div className='probrod' key={product.id}>
+          {product.image && <img src={imagePathWithoutBaseURL} alt={product.name} />}
+          <span>
+            <Link to={`${product.id}`}>{product.name}</Link>
+          </span>
+        </div>
+      );
+    })}
+  </div>
+)}
           </div>
         </div>
       </div>
