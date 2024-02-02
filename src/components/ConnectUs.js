@@ -19,6 +19,7 @@ const AlignmentDiv = styled.div`
   justify-content: space-between;
   align-items: center;
   border-radius: 20px;
+  flex-wrap:wrap;
   background: linear-gradient(90deg, #CD8BFF -54.61%, rgba(255, 255, 255, 0.00) 169.53%);
 
   @media (max-width: 1200px) {
@@ -27,14 +28,12 @@ const AlignmentDiv = styled.div`
 `;
 
 const InnerDiv = styled.div`
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 16px;
-  display: flex;
+ 
 `;
   const InnerDiv2 = styled.div`
-    display: flex;
      @media (max-width: 768px) {
     display:grid;
     align-items: center; 

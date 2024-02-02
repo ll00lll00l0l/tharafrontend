@@ -9,17 +9,12 @@
   padding: 81px 0px 90px 70px;
 }
 
-
-/* .grid-container {
-    display: flex;
-    align-items: center;
-  } */
   
   .grid-item1 {
     display: flex;
     width: 619px;
     align-items: flex-start;
-    align-content: flex-start;
+    align-content: flex-start;  
     gap: 36px 41px;
     flex-wrap: wrap;
   }

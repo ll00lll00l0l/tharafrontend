@@ -10,35 +10,36 @@ const GlobalStyle = createGlobalStyle`
 
 const BrodDiv = styled.div`
   display: flex;
-  padding: 81px 20px;
+  padding: 81px 70px;
 
-  @media (min-width: 768px) {
-    padding: 81px 70px;
-  }
+
 `;
 
 const Outdivv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
 
   h1 {
     color: #151515;
     font-family: Sora;
-    font-size: 40px;
+    font-size: 50px;
     font-style: normal;
     font-weight: 600;
     line-height: 38.4px;
     letter-spacing: 0.5px;
   }
 
-  @media (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+  @media (max-width: 768px) {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
 
     h1 {
-      font-size: 50px;
+      font-size: 40px;
     }
   }
 `;
@@ -47,7 +48,7 @@ const Div1 = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 70px;
 
   p {
     display: flex;
@@ -57,18 +58,19 @@ const Div1 = styled.div`
     justify-content: center;
     color: #151515;
     font-family: Manrope;
-    font-size: 18px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
   }
 
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     align-items: flex-start;
-    margin-top: 70px;
+    margin-top: 20px;
 
     p {
-      font-size: 32px;
+      font-size: 18px;
+
     }
   }
 `;
@@ -76,49 +78,48 @@ const Div1 = styled.div`
 const Div2 = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  align-items: flex-start;
+    gap: 70px;
 
   p {
     color: #151515;
     font-family: Manrope;
-    font-size: 14px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
     letter-spacing: 0.5px;
   }
 
-  @media (min-width: 1040px) {
-    align-items: flex-start;
-    gap: 70px;
+  @media (max-width: 1040px) {
+    align-items: center;
+  
+    gap: 20px;
 
     p {
-      font-size: 18px;
+      font-size: 14px;
     }
   }
 `;
 
 const Broddiv2 = styled.div`
   display: flex;
-  padding: 20px;
+  padding: 90px;
 
-  @media (min-width: 1040px) {
-    padding: 120px 70px;
+  @media (max-width: 1040px) {
+    padding: 20px 70px;
   }
 `;
 
 const Indiv = styled.div`
-  display: flex;
+    display: flex;
+  align-items: flex-start;
+    gap: 40px;
+
+  @media (max-width: 768px) {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: auto;
   }
 `;
 
@@ -127,8 +128,8 @@ const Divder = styled.div`
     padding: 30px 30px ;
     border-radius: 20px;
   border: 1px solid #AEAEAE;
-  width: 619px;
-  height: 253px;
+   width: 344px;
+    height: 237px;
   flex-shrink: 0;
   color: #fff;
   background: radial-gradient(circle at 0% 0%, #450079 50%, transparent 0%);
@@ -182,19 +183,19 @@ const Divder = styled.div`
   p {
     color: #2f2f2f;
     font-family: Manrope;
-    font-size: 14px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: 123%;
     text-transform: capitalize;
   }
 
-  @media (min-width: 1040px) {
+  @media (max-width: 1040px) {
     width: 344px;
     height: 237px;
 
     span {
-      font-size: 40px;
+      font-size: 48px;
     }
 
     p {

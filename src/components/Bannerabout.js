@@ -2,6 +2,9 @@ import React from 'react';
 import  './Bannerabout.css'; 
 import Star  from './Allsvgcomp.js'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
+
+
 
 
 const Bannerabout = ({ title, paragraph,   heading, hideButton ,selectedCase}) => {
@@ -21,6 +24,7 @@ const Bannerabout = ({ title, paragraph,   heading, hideButton ,selectedCase}) =
                 <div>{paragraph}</div>
                 {!hideButton && (
                   <div className="arrow-container">
+                    <Link to="/contact">
                     <button className="btn-white" id="hide">Contact Us
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +42,7 @@ const Bannerabout = ({ title, paragraph,   heading, hideButton ,selectedCase}) =
                           strokeLinejoin="round"
                         />
                       </svg>
-                    </button>
+                    </button></Link>
                   </div>
                 )}
               </div>
