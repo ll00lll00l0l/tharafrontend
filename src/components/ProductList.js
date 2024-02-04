@@ -149,10 +149,10 @@ class ProductList extends Component {
 
       return (
         <div className='probrod' key={product.id}>
-          {product.image && <img src={imagePathWithoutBaseURL} alt={product.name} />}
-          <span>
+           <div>  {product.image && <img src={imagePathWithoutBaseURL} alt={product.name} />}
+       
             <Link to={`${product.id}`}>{product.name}</Link>
-          </span>
+          </div>
         </div>
       );
     })}
