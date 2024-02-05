@@ -131,8 +131,10 @@ const Divder = styled.div`
     padding: 30px 30px ;
     border-radius: 20px;
   border: 1px solid #AEAEAE;
-   width: 344px;
-    height: 237px;
+  width: auto; 
+  max-width: 344px; 
+  height: 237px;
+  flex-shrink: 0;
   flex-shrink: 0;
   color: #fff;
   background: radial-gradient(circle at 0% 0%, #450079 50%, transparent 0%);
@@ -194,8 +196,6 @@ const Divder = styled.div`
   }
 
   @media (max-width: 1250px) {
-    min-width: 340px;
-    height: 230px;
 
     span {
       font-size: 48px;
