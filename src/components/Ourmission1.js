@@ -116,6 +116,7 @@ const Broddiv2 = styled.div`
 const Indiv = styled.div`
     display: flex;
   align-items: flex-start;
+  flex-wrap:wrap;
     gap: 40px;
 
   @media (max-width: 768px) {
@@ -192,9 +193,9 @@ const Divder = styled.div`
     text-transform: capitalize;
   }
 
-  @media (max-width: 1040px) {
-    width: 344px;
-    height: 237px;
+  @media (max-width: 1250px) {
+    min-width: 340px;
+    height: 230px;
 
     span {
       font-size: 48px;
