@@ -109,7 +109,7 @@ const Broddiv2 = styled.div`
   padding: 90px;
 
   @media (max-width: 1040px) {
-    padding: 20px 20px;
+    padding: 2px 2px ;
   }
 `;
 
