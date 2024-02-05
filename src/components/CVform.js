@@ -98,7 +98,7 @@ const CVForm = () => {
 </svg>
                   {cvFile ? 'Submit ' : 'Upload CV '}
                 </button>
-                <h6>or</h6>
+                <span>or</span>
                 <button
                   type="button"
                   className='upsubtn'

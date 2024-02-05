@@ -13,7 +13,7 @@ function BannerImg() {
       <>
       <div className=''>
       <div className='ban'>
-      <div className='banner col-sm-6 '>  
+      <div className='banner  '>  
       <div className="banner-info">
         <span >You Make</span>
         <span>We Trade</span>
@@ -53,7 +53,7 @@ function BannerImg() {
       
 
       
-      <div className='banner-container col-md-6'>
+      <div className='banner-container '>
           <div className='banner-image-container'>
             <img className='banner-image img-fluid ' src={banner} alt='img' />
             <img className='Ellipse-image img-fluid  ' src={Ellipse} alt='img' />

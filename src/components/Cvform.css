@@ -12,6 +12,10 @@ line-height: 38.4px; /* 76.8% */
 letter-spacing: 0.5px;
 margin-bottom: 70px ;
 }
+.colp{
+    display: flex;
+    flex-wrap: wrap;
+}
 .colp p{
     color: #151515;
     font-family: Manrope;
@@ -24,10 +28,20 @@ margin-bottom: 70px ;
 .colp2{
     display: flex;
 align-items: center;
+flex-wrap: wrap;
 white-space: nowrap;
 gap: 61px;
 }
 .colp2 h6{
+    color: #151515;
+font-family: Manrope;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 28.8px */
+letter-spacing: 0.5px;
+}
+.colp2 span{
     color: #151515;
 font-family: Manrope;
 font-size: 18px;

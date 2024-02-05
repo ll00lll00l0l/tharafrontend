@@ -54,7 +54,7 @@ align-items: center;
       }
       
       .banner-image {
-        width: 463.144px;
+        width: 663.144px;
         height: 463.144px;
         flex-shrink: 0;
         position: relative;
@@ -75,8 +75,8 @@ align-items: center;
       .banner-shadow::before {
         content: "";
         position: absolute;
-        top: 900px;
-        left: -250px;
+        top: 1000px;
+        left: -200px;
         width: 100%;
         height: 100%;
         border-radius: 50%;
