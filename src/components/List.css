@@ -1,10 +1,17 @@
-.listbroder{
-      justify-content: flex-start;
-      align-items: center;
-align-self: stretch;
-gap: auto;
-padding:81px 70px ;
-}
+.listbroder {
+    justify-content: flex-start;
+    align-items: center;
+    align-self: stretch;
+    gap: auto;
+    padding: 81px 70px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Adjust styles for screens with a maximum width of 768 pixels */
+    .listbroder {
+      padding:41px 20px; /* Adjust the padding for smaller screens */
+    }
+  }
 .listbutton {
     display: flex;
     justify-content: flex-end;

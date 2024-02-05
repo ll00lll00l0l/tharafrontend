@@ -1,8 +1,7 @@
 import React from 'react';
 import './AboutUs.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
+import SVG  from './Allsvgcomp.js'; 
 
 function AboutUs() {
   return (
@@ -14,75 +13,30 @@ function AboutUs() {
               <div className='grid-item1 '>
                 <div className='grid-child  col-sm-2'>
                   <div className='image-container'>
-                  <svg  className='Ellipse-img'xmlns="http://www.w3.org/2000/svg" width="60" height="61" viewBox="0 0 60 61" fill="none">
-                   <circle cx="30.3408" cy="30.6431" r="29.665" fill="#EFEFEF"/>
-                  </svg>
+             <SVG className='imgsvg' caseValue='case11' />
+
                   <div className='svg-container'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='42'
-                      height='42'
-                      viewBox='0 0 42 42'
-                      fill='none'
-                    >
-                      <path
-                        d='M4.8829 29.0784L14.0669 20.2476L21.9389 27.8169L37.6829 12.6784M37.6829 12.6784H25.8749M37.6829 12.6784V24.0322'
-                        stroke='black'
-                        strokeWidth='2'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                      />
-                    </svg>
+                    <SVG className='imgsvg' caseValue='case10' />
                      </div></div>
                     <div className='textcontent'><span>40 Years</span>
                     <p>of Successful Trading</p></div>
                 </div>
                 <div className='grid-child  col-sm-2'>
                   <div className='image-container'>
-                  <svg  className='Ellipse-img'xmlns="http://www.w3.org/2000/svg" width="60" height="61" viewBox="0 0 60 61" fill="none">
-                   <circle cx="30.3408" cy="30.6431" r="29.665" fill="#EFEFEF"/>
-                  </svg>
+             <SVG className='imgsvg' caseValue='case11' />
+
                   <div className='svg-container'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='42'
-                      height='42'
-                      viewBox='0 0 42 42'
-                      fill='none'
-                    >
-                      <path
-                        d='M4.8829 29.0784L14.0669 20.2476L21.9389 27.8169L37.6829 12.6784M37.6829 12.6784H25.8749M37.6829 12.6784V24.0322'
-                        stroke='black'
-                        strokeWidth='2'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                      />
-                    </svg>
+                    <SVG className='imgsvg' caseValue='case10' />
                      </div></div>
                     <div className='textcontent'><span>05+</span>
                     <p>Thara Companies</p></div>
                 </div>
                 <div className='grid-child2  col-sm-2'>
                   <div className='image-container'>
-                  <svg  className='Ellipse-img'xmlns="http://www.w3.org/2000/svg" width="60" height="61" viewBox="0 0 60 61" fill="none">
-                   <circle cx="30.3408" cy="30.6431" r="29.665" fill="#EFEFEF"/>
-                  </svg>
+             <SVG className='imgsvg' caseValue='case11' />
+
                   <div className='svg-container'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='42'
-                      height='42'
-                      viewBox='0 0 42 42'
-                      fill='none'
-                    >
-                      <path
-                        d='M4.8829 29.0784L14.0669 20.2476L21.9389 27.8169L37.6829 12.6784M37.6829 12.6784H25.8749M37.6829 12.6784V24.0322'
-                        stroke='black'
-                        strokeWidth='2'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                      />
-                    </svg>
+                    <SVG className='imgsvg' caseValue='case10' />
                      </div></div>
                     <div className='textcontent'><span>More than 20</span>
                     <p>International Brands are collaborated with Us</p></div>

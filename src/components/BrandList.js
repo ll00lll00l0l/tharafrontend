@@ -81,7 +81,7 @@ class BrandList extends Component {
                     src={imagePathWithoutBaseURL}
                     alt={brand.name}
                     className='img-fluid '
-                    style={{ width: '150px', height: '150px' }}
+                    style={{ width: 'auto', height: 'auto' }}
                   />
                 )}
                 <div key={brand.id}>

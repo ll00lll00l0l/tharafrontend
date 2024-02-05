@@ -13,10 +13,8 @@ function BannerImg() {
       <>
       <div className=''>
       <div className='ban'>
-      <div className='banner col-sm-6 '>
-      
+      <div className='banner col-sm-6 '>  
       <div className="banner-info">
-       
         <span >You Make</span>
         <span>We Trade</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="309" height="21" viewBox="0 0 309 21" fill="none">
@@ -55,10 +53,10 @@ function BannerImg() {
       
 
       
-      <div className='banner-container col-sm-4'>
+      <div className='banner-container col-md-6'>
           <div className='banner-image-container'>
-            <img className='banner-image image-fluid ' src={banner} alt='img' />
-            <img className='Ellipse-image image-fluid  ' src={Ellipse} alt='img' />
+            <img className='banner-image img-fluid ' src={banner} alt='img' />
+            <img className='Ellipse-image img-fluid  ' src={Ellipse} alt='img' />
             <div className='banner-shadow'></div>
           
     </div>

@@ -156,7 +156,7 @@ class CompanyList extends Component {
                                     <img
                                       src={imagePathWithoutBaseURL}  // Use the corrected imagePathWithoutBaseURL
                                       alt={filteredbrand.name}
-                                      style={{ width: '150px', height: '100%' }}
+                                      className='image-fluid'
                                     />
                                   );
                                 })()

@@ -91,7 +91,7 @@ const Sdiv = styled.div`
     grid-column: 2;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1250px) {
     padding-top:30px;
     grid-template-columns: 1fr;
 

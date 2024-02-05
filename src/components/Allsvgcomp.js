@@ -151,7 +151,32 @@ const Allsvgcomp = ({ caseValue }) => {
             );
             break;
     // Add more cases as needed
-
+    case 'case10':
+      svgComponent =(
+<svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      width='42'
+                      height='42'
+                      viewBox='0 0 42 42'
+                      fill='none'
+                    >
+                      <path
+                        d='M4.8829 29.0784L14.0669 20.2476L21.9389 27.8169L37.6829 12.6784M37.6829 12.6784H25.8749M37.6829 12.6784V24.0322'
+                        stroke='black'
+                        strokeWidth='2'
+                        strokeLinecap='round'
+                        strokeLinejoin='round'
+                      />
+                    </svg>
+      );
+      break;
+case 'case11':
+      svgComponent =(
+         <svg  className='Ellipse-img'xmlns="http://www.w3.org/2000/svg" width="60" height="61" viewBox="0 0 60 61" fill="none">
+                   <circle cx="30.3408" cy="30.6431" r="29.665" fill="#EFEFEF"/>
+                  </svg> 
+                   );
+      break;
     default:
       // Default case when no condition is met
       svgComponent = null;

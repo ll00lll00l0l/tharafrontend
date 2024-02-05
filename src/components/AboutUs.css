@@ -7,9 +7,7 @@
   align-items: center;
   gap: auto;
   padding: 81px 0px 90px 70px;
-}
-
-  
+} 
   .grid-item1 {
     display: flex;
     width: 619px;
@@ -31,13 +29,10 @@
     background-size: 400% 400%;
     transition: background 800ms ease-in-out;
   }
-  
   .grid-child:hover {
     background-position: 0% 0%;
     color: #fff; /* You can keep this line if you want to change the text color on hover */
   }
-  
-
   .grid-child span{
       font-family: DM Sans;
       font-size: 48px;
