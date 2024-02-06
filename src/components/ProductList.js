@@ -139,7 +139,7 @@ class ProductList extends Component {
               ))}
             </div>
           </div>
-          <div >
+          <div>
           {isListVisible && (
   <div className='listprobrod'>
     {filteredProducts.map((product) => {
@@ -158,9 +158,9 @@ class ProductList extends Component {
     })}
   </div>
 )}
-          </div>
-        </div>
-      </div>
+  </div>
+ </div>
+ </div>
     );
   }
 }

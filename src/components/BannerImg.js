@@ -55,8 +55,8 @@ function BannerImg() {
       
       <div className='banner-container '>
           <div className='banner-image-container'>
-            <img className='banner-image img-fluid ' src={banner} alt='img' />
-            <img className='Ellipse-image img-fluid  ' src={Ellipse} alt='img' />
+            <img className='banner-image img-fluid' src={banner} alt='img' />
+            <img className='Ellipse-image img-fluid ' src={Ellipse} alt='img' />
             <div className='banner-shadow'></div>
           
     </div>

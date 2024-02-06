@@ -108,10 +108,10 @@
     background: #5B19A8;
 }
 .listprobrod {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 35px;
-  max-width: 970px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 35px;
   margin: 10px 50px;
 }
 
@@ -125,9 +125,9 @@
 .probrod div {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  flex: 1; /* This will make flex items grow and shrink */
+  max-width: 300px;
+ 
 }
 
 .probrod div img {
@@ -146,8 +146,6 @@
   color: #151515;
   text-decoration: none;
   text-align: center;
-  overflow: hidden;
-  white-space: normal;
 }
 
 .datause ul li{
