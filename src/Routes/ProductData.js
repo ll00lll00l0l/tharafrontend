@@ -73,7 +73,7 @@ const ProductDetail = () => {
             <img
               src={imagePathWithoutBaseURL}
               alt={product.name}
-              className="img-fluid "
+              className="img-fluid"
             />
             </div>
           )}
@@ -129,7 +129,7 @@ const ProductDetail = () => {
               {items
                 .filter((item) => item.brand === product.brand)
                 .map((filteredItem) => (
-                  <div key={filteredItem.id} className=''>
+                  <div key={filteredItem.id} className='Similarproddata'>
                     {filteredItem.image && (
                       <img
                         src={imagePathWithoutBaseURL}

@@ -1,4 +1,4 @@
-.rowaligmm{
+    .rowaligmm{
     display: flex;
 justify-content: space-between;
 align-items: flex-start;
@@ -6,9 +6,11 @@ gap: auto;
 padding:30px 70px;
 }
 
-.divimgdata img{
-    width: 400px;
-    height: 400px;
+.divimgdata img {
+    width: 30vw;
+    height: 30vw;
+    min-width: 250px; 
+    min-height: 250px; 
     border-radius: 20px;
 }
 .proddatacol{
@@ -28,9 +30,9 @@ line-height: 18px; /* 100% */
 letter-spacing: 0.5px;
 }
 .proddatacol div h1{
-    color: #151515;
+color: #151515;
 font-family: Manrope;
-font-size: 32px;
+font-size: 3.3vw;
 font-style: normal;
 font-weight: 600;
 line-height: 160%; /* 51.2px */

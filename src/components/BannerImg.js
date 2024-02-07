@@ -1,7 +1,7 @@
 import React from 'react'
 import "./BannerImgStyle.css";
 import banner from '../assets/img/banner.png';
-import Ellipse from '../assets/img/Ellipse 2.svg';
+import Ellipse from '../assets/img/Ellipse 2.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
