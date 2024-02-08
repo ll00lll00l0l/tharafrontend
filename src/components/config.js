@@ -1,4 +1,4 @@
 // config.js
-const baseURL = 'http://51.20.6.103';
+const baseURL = 'https://tharagroup.akhilv.com';
 
 export default baseURL;

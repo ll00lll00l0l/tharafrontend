@@ -72,7 +72,7 @@ class BrandList extends Component {
         <div className='aligm'>
           {brands.map((brand) => {
             const newBaseURL = `${baseURL}`;
-            const imagePathWithoutBaseURL = brand.image.replace('http://0.0.0.0:9090', newBaseURL);
+            const imagePathWithoutBaseURL = brand.image.replace('https://0.0.0.0:9090', newBaseURL);
 
             return (
               <div key={brand.id} className='border-bottom rounded-sm p-3 pt-6'>
@@ -128,7 +128,7 @@ class BrandList extends Component {
                                 // Corrected the use of 'const' and 'return'
                                 (() => {
                                   const newBaseURL = `${baseURL}`;
-                                  const imagePathWithoutBaseURL = filteredItem.image.replace('http://0.0.0.0:9090', newBaseURL);
+                                  const imagePathWithoutBaseURL = filteredItem.image.replace('https://0.0.0.0:9090', newBaseURL);
 
                                   return (
                                     <img

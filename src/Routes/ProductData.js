@@ -60,7 +60,7 @@ const ProductDetail = () => {
     getItemData();
   }, []); // Call getItemData once when the component mounts
   const newBaseURL = `${baseURL}`;
-  const imagePathWithoutBaseURL = product?.image?.replace('http://0.0.0.0:9090', newBaseURL);
+  const imagePathWithoutBaseURL = product?.image?.replace('https://0.0.0.0:9090', newBaseURL);
 
   return (
     <div>

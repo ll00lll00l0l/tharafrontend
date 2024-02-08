@@ -145,7 +145,7 @@ class ProductList extends Component {
     {filteredProducts.map((product) => {
       // Removing the base URL from the image path and replacing with the new base URL
       const newBaseURL = `${baseURL}`;
-      const imagePathWithoutBaseURL = product.image.replace('http://0.0.0.0:9090', newBaseURL);
+      const imagePathWithoutBaseURL = product.image.replace('https://0.0.0.0:9090', newBaseURL);
 
       return (
         <div className='probrod' key={product.id}>
