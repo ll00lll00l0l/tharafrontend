@@ -44,6 +44,7 @@ align-items: center;
         overflow: hidden; 
         text-overflow: ellipsis;
         width: fit-content; 
+        text-wrap: balance;
  
       }
       .banner-image-container {

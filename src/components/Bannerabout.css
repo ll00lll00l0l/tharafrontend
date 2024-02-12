@@ -59,6 +59,7 @@
     font-weight: 400;
     line-height: 160%; 
     padding-bottom: 47px;
+    text-wrap: balance;
 }
 
 .innerdiv2 {

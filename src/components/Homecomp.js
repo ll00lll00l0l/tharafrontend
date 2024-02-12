@@ -24,9 +24,7 @@ const Divoutter = styled.div`
   gap: 70px;
   background: var(--BG-g1, linear-gradient(283deg, #B048FF -174.56%, rgba(145, 0, 255, 0.00) 109.23%));
 
-  @media (max-width: 768px) {
-    padding: 70px 20px;
-  }
+
 `;
 
 const AboutSection = styled.section`
@@ -36,6 +34,7 @@ const AboutSection = styled.section`
   font-weight: 400;
   line-height: 1.6;
   letter-spacing: 0.5px;
+  text-wrap: balance;
 
   @media (max-width: 768px) {
     font-size: 1rem;
@@ -50,7 +49,6 @@ const ImageContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 27px;
 `;
 const Sdiv = styled.div`
   display: grid;
@@ -92,7 +90,6 @@ const Sdiv = styled.div`
   }
 
   @media (max-width: 1250px) {
-    padding-top:30px;
     grid-template-columns: 1fr;
 
     .item1, .item2, .item3, .item4, .item5, .item6 {
@@ -157,6 +154,7 @@ const InnerDiv = styled.div`
   justify-content: center;
   align-items: flex-start;
   gap: 47px;
+  
 `;
 
 function Homecomp() {

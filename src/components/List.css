@@ -47,6 +47,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 160%; /* 28.8px */
 letter-spacing: 0.5px;
+text-wrap: balance;
 }
 .listcol a{
     color: #1D1D1D;
@@ -57,6 +58,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 160%; /* 28.8px */
 letter-spacing: 0.36px;
+text-decoration: none;
 }
 .listcol span{
     display: flex;

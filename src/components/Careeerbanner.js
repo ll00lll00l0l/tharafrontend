@@ -46,14 +46,13 @@ const P = styled.p`
 const H1 = styled.h1`
   color: #fff;
   font-family: Sora;
-  font-size: 60px;
+  font-size: clamp(40px,6vw,60px);
   font-style: normal;
   font-weight: 600;
   line-height: 38.4px;
   letter-spacing: 0.5px;
   @media (max-width: 768px) {
-    font-size: 40px;
-  font-weight: 500;
+
  
   }
 `;
@@ -68,18 +67,19 @@ const Headingmain = styled.section`
 const Gheading= styled.h2`
 color: #FFF;
 font-family: Manrope;
-font-size: 32px;
+font-size: clamp(14px,3vw,32px);
 font-style: normal;
 font-weight: 400;
 width: 432.469px;
 line-height: 160%; /* 51.2px */
 margin-bottom:17px;
-
+text-wrap: balance;
+/* 
 @media (max-width: 768px) {
   display:none; 
  
-  }  `
-
+  }   */
+`
 const Gparh = styled.p`
 color: #FFF;
 font-family: Manrope;
@@ -89,7 +89,8 @@ font-weight: 400;
 line-height: 160%; /* 28.8px */
 width: 631.444px;
 letter-spacing: 0.5px;
-@media (max-width: 768px) {
+text-wrap: balance;
+@media (max-width: 1040px) {
 display:none; 
   } 
 `

@@ -8,11 +8,14 @@
   gap: auto;
   padding: 81px 0px 90px 70px;
 } 
+.aboutflex{
+  display: flex;
+  flex-wrap: wrap;
+}
   .grid-item1 {
     display: flex;
     width: 619px;
-    align-items: flex-start;
-    align-content: flex-start;  
+    
     gap: 36px 41px;
     flex-wrap: wrap;
   }
@@ -97,9 +100,10 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; /* 28.8px */
+    line-height: 160%; 
     letter-spacing: 0.5px;
     font-family: Manrope;
+    text-wrap: balance;
   }
   .grid-child2{
     padding: 30px 30px ;

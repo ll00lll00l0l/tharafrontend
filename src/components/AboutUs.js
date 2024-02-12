@@ -6,7 +6,7 @@ import SVG  from './Allsvgcomp.js';
 function AboutUs() {
   return (
     <div className=' contain'>
-      <div className='row' >
+      <div className='aboutflex' >
         <div1 className='col-md-6 '>
           <div className=''>
             <div className=''>

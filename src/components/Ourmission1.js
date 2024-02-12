@@ -28,7 +28,7 @@ const Outdivv = styled.div`
   h1 {
     color: #151515;
     font-family: Sora;
-    font-size: 50px;
+    font-size: clamp(40px,5vw,50px);
     font-style: normal;
     font-weight: 600;
     line-height: 38.4px;
@@ -40,9 +40,6 @@ const Outdivv = styled.div`
   flex-direction: column;
   align-items: center;
 
-    h1 {
-      font-size: 40px;
-    }
   }
 `;
 
@@ -60,7 +57,7 @@ const Div1 = styled.div`
     justify-content: center;
     color: #151515;
     font-family: Manrope;
-    font-size: 32px;
+    font-size:clamp(18px,4vw, 32px);
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
@@ -70,10 +67,6 @@ const Div1 = styled.div`
     align-items: flex-start;
     margin-top: 20px;
 
-    p {
-      font-size: 18px;
-
-    }
   }
 `;
 
@@ -86,22 +79,21 @@ const Div2 = styled.div`
   p {
     color: #151515;
     font-family: Manrope;
-    font-size: 18px;
+    font-size: clamp(14px,3vw,18px);
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
     letter-spacing: 0.5px;
+    text-wrap: balance;
   }
 
-  @media (max-width: 1040px) {
+   @media (max-width: 1040px) {
     align-items: center;
   
     gap: 20px;
 
-    p {
-      font-size: 14px;
-    }
-  }
+ 
+  } 
 `;
 
 const Broddiv2 = styled.div`
@@ -134,7 +126,6 @@ const Divder = styled.div`
   width: auto; 
   max-width: 344px; 
   height: 237px;
-  flex-shrink: 0;
   flex-shrink: 0;
   color: #fff;
   background: radial-gradient(circle at 0% 0%, #450079 50%, transparent 0%);
@@ -193,18 +184,10 @@ const Divder = styled.div`
     font-weight: 400;
     line-height: 123%;
     text-transform: capitalize;
+    text-wrap: balance;
   }
 
-  @media (max-width: 1250px) {
 
-    span {
-      font-size: 48px;
-    }
-
-    p {
-      font-size: 24px;
-    }
-  }
 `;
 
 const Ourmission1 = () => {
