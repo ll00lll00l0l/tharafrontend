@@ -67,7 +67,7 @@ justify-content: center;
 align-items: flex-start;
 gap: 50px;
 text-wrap: balance;
-`;
+`
 
 const Aboutcomp = () => {
   return (

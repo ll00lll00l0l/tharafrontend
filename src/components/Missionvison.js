@@ -8,8 +8,8 @@ import SVG  from './Allsvgcomp.js';
 function Missionvison() {
   return (
     <div className='container-fluid mcontain'>
-      <div className='row mgapoo' >
-      <div className='col-md-6 '>
+      <div className=' mgapoo' >
+      <div className=' '>
           <div className='mgrid-item2'>
            
             <span>Our Mission & Vision</span>
@@ -19,7 +19,7 @@ function Missionvison() {
            
           </div>
         </div>
-        <div className='col-md-6 '>
+        <div className=' '>
           <div className=''>
             <div className='mgrid-container'>
               <div className='mgrid-item1 '>

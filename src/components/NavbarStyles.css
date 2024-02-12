@@ -75,12 +75,12 @@
     text-align: center;
     color: #000;
     font-family: Manrope;
-    font-size: 18px;
+    font-size: clamp(14px,3vw,18px);
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
     letter-spacing: 0.5px;
-    transition: background-color 0.3s ease; /* Add a transition for smooth effect */
+    transition: background-color 0.3s ease; 
   }
   
   /* .nav-dropdown li:hover a {
@@ -104,10 +104,11 @@
         justify-content:none;
         align-items: center;
         width:100%;
-        height: 100%;
+        height: 70%;
         position:absolute;
-        top: 30%;
-        left: -100%;
+        gap: 10px;
+        top: 0%;
+        left: 100%;
         background: rgba(0, 0, 0, 0.5); 
         z-index: 2;
         backdrop-filter: blur(20px);
@@ -122,6 +123,7 @@
   
     .nav-menu li{
         padding: 1rem 0;
+       
     }
     .nav-menu li a {
         font-size: 2rem;
