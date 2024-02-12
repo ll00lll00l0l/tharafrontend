@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 
 // Styled components
 const BorderDiv = styled.div`
-  padding: 40.214px 70px;
+  padding: 0px 70px;
  
 
   @media (max-width: 768px) {
-    padding: 70px 20px; 
+    padding: 0px 20px; 
   }
 `;
 const ResponsiveHeading = styled.h1`
@@ -101,7 +101,7 @@ const Aboutcomp = () => {
       </button></Link>
     </div>
           </InnerDiv>
-          <div className='col-md-6'>
+          <div className='col-md-6 py-4'>
             <ImageContainer>
               <Image src={compimg} alt='' />
             </ImageContainer>

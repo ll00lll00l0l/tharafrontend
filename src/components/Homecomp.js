@@ -91,6 +91,7 @@ const Sdiv = styled.div`
 
   @media (max-width: 1250px) {
     grid-template-columns: 1fr;
+    padding-top:20px;
 
     .item1, .item2, .item3, .item4, .item5, .item6 {
     grid-column: 1;
@@ -99,9 +100,9 @@ const Sdiv = styled.div`
   .item1 { grid-row: 1; }
   .item2 { grid-row: 2; }
   .item3 { grid-row: 3; }
-  .item4 { grid-row: 4; }
-  .item5 { grid-row: 5; }
-  .item6 { grid-row: 6; }
+  .item4 { display:none}
+  .item5 { display:none }
+  .item6 { grid-row: 4; }
 }
 `;
 

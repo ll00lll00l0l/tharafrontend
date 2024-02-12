@@ -54,11 +54,12 @@ const Col = styled.div`
     padding:34px 120px 0 0;
     color: #FFF;
 font-family: Manrope;
-font-size: 18px;
+font-size: clamp(15px,2.5vw,18px);
 font-style: normal;
 font-weight: 400;
 line-height: 160%; /* 28.8px */
 letter-spacing: 0.5px;
+text-wrap: balance;
   }
   @media (max-width: 768px) {
     p {
@@ -80,6 +81,8 @@ const QuickLinks = styled.div`
     display: block;
     margin-bottom: 8px;
     font-size: 16px;
+    text-wrap: balance;
+
   }
 `;
 
@@ -120,13 +123,12 @@ const SocialIcons = styled.div`
 const Attribution = styled.div`
   span {
     display: flex;
-    align-items: flex-start;
     gap: 882px;
   }
     p {
       color: #B57BE1;
       font-family: Manrope;
-      font-size: 18px; 
+      font-size:clamp(12px,1.3vw,18px); 
        font-style: normal;
       font-weight: 400;
       line-height: 38.4px; 
@@ -136,12 +138,10 @@ const Attribution = styled.div`
 
   @media (max-width: 768px) {
     span {
-      justify-content:center;
       gap: 16px;
+      justify-content:center;
     }
-    p{
-      font-size: 12px;
-    }
+   
   }
 `;
 

@@ -108,7 +108,7 @@
         position:absolute;
         gap: 10px;
         top: 0%;
-        left: 100%;
+        left: -100%;
         background: rgba(0, 0, 0, 0.5); 
         z-index: 2;
         backdrop-filter: blur(20px);

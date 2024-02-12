@@ -2,26 +2,28 @@
 
 
 .contain{
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: auto;
+ 
   padding: 81px 0px 90px 70px;
 } 
 .aboutflex{
   display: flex;
   flex-wrap: wrap;
 }
+
   .grid-item1 {
     display: flex;
-    width: 619px;
-    
     gap: 36px 41px;
     flex-wrap: wrap;
   }
+  .flexboxxthree{
+    flex-wrap: wrap;
+    flex-shrink: 1;
+  }
   .grid-child {
     padding: 30px 30px ;
-    width: 289px;
+    width:clamp(289px,6vw, 200px);
     flex-shrink: 0;
     border-radius: 20px;
     border: 1px solid #AEAEAE;
@@ -37,15 +39,14 @@
     color: #fff; /* You can keep this line if you want to change the text color on hover */
   }
   .grid-child span{
-      font-family: DM Sans;
-      font-size: 48px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 123%; /* 59.04px */
-      letter-spacing: -1.44px;
-      text-transform: capitalize; 
-      color: #1B1B1B; 
-      padding-top: 120px;
+    color: #1B1B1B;
+    font-family: Manrope;
+    font-size: clamp(40px,3vw,48px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 123%; 
+    letter-spacing: -1.2px;
+    text-transform: capitalize;
 
   }
   .grid-child:hover span ,
@@ -88,7 +89,7 @@
   }
   .grid-item2 span{
     color: #151515;
-    font-size: 50px;
+    font-size: clamp(40px,3vw,50px);
     font-family: Sora;
     font-weight: 600;
     line-height: 38.4px; /* 76.8% */
@@ -97,7 +98,7 @@
   }
   .grid-item2 p{
     color: #151515;
-    font-size: 18px;
+    font-size: clamp(15px,3vw,18px);
     font-style: normal;
     font-weight: 400;
     line-height: 160%; 
@@ -109,9 +110,8 @@
     padding: 30px 30px ;
     border-radius: 20px;
   border: 1px solid #AEAEAE;
-  width: 619px;
+  width: clamp(619px,20vw,200px);
   height: 253px;
-  flex-shrink: 0;
   color: #fff;
   background: radial-gradient(circle at 0% 0%, #450079 50%, transparent 0%);
     background-position: 100% 50%;
@@ -127,31 +127,28 @@
 }
 
 .grid-child2 span{
-  font-family: DM Sans;
-  font-size: 48px;
+  color: #1B1B1B;
+  font-family: Manrope;
+  font-size: clamp(40px,3vw,48px);
   font-style: normal;
   font-weight: 700;
-  line-height: 123%; /* 59.04px */
-  letter-spacing: -1.44px;
-  text-transform: capitalize; 
-  color: #1B1B1B;
-  padding-top: 60px;
-
-
+  line-height: 123%; 
+  letter-spacing: -1.2px;
+  text-transform: capitalize;
 }
 .textcontent{
   padding-top: 30px;
 }
-.textcontent span{
+/* .textcontent span{
   color: #1B1B1B;
 font-family: Manrope;
-font-size: 40px;
+font-size: clamp(40px,3vw,48px);
 font-style: normal;
 font-weight: 700;
-line-height: 123%; /* 49.2px */
+line-height: 123%; 
 letter-spacing: -1.2px;
 text-transform: capitalize;
-}
+} */
 .grid-child2:hover span ,
 .grid-child2:hover p{
 color: #FFF;
@@ -167,7 +164,7 @@ stroke: #FFF; /* Change this to your desired hover color */
 .grid-child2 p{
   color: #2F2F2F;
   font-family: Manrope;
-  font-size: 24px;
+  font-size: clamp(18px,2.5vw,24px);
   font-style: normal;
   font-weight: 400;
   line-height: 123%; /* 29.52px */

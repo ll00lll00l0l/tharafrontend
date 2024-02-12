@@ -6,12 +6,12 @@ import SVG  from './Allsvgcomp.js';
 function AboutUs() {
   return (
     <div className=' contain'>
-      <div className='aboutflex' >
-        <div1 className='col-md-6 '>
+      <div className='row' >
+        <div className='col-md-6 py-4'>
           <div className=''>
-            <div className=''>
+            <div className=' flex-item1'>
               <div className='grid-item1 '>
-                <div className='grid-child  col-sm-2'>
+                <div className='grid-child'>
                   <div className='image-container'>
              <SVG className='imgsvg' caseValue='case11' />
 
@@ -21,7 +21,7 @@ function AboutUs() {
                     <div className='textcontent'><span>40 Years</span>
                     <p>of Successful Trading</p></div>
                 </div>
-                <div className='grid-child  col-sm-2'>
+                <div className='grid-child'>
                   <div className='image-container'>
              <SVG className='imgsvg' caseValue='case11' />
 
@@ -31,20 +31,20 @@ function AboutUs() {
                     <div className='textcontent'><span>05+</span>
                     <p>Thara Companies</p></div>
                 </div>
-                <div className='grid-child2  col-sm-2'>
+                <div className='grid-child2'>
                   <div className='image-container'>
              <SVG className='imgsvg' caseValue='case11' />
 
                   <div className='svg-container'>
                     <SVG className='imgsvg' caseValue='case10' />
                      </div></div>
-                    <div className='textcontent'><span>More than 20</span>
+                    <div><span>More than 20</span>
                     <p>International Brands are collaborated with Us</p></div>
                 </div>
               </div>
             </div>
           </div>
-        </div1>
+        </div>
 
         <div className='col-md-6'>
           <div className='grid-item2'>
