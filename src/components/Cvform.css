@@ -1,16 +1,18 @@
 .cvform{
     padding: 90px 70px;
-
+    @media (max-width: 1040px) {
+        padding: 90px 20px;
+    }
 }
 .cvform h2{
     color: #151515;
 font-family: Sora;
-font-size: 50px;
+font-size: clamp(30px,4vw,50px);
 font-style: normal;
 font-weight: 600;
 line-height: 38.4px; /* 76.8% */
 letter-spacing: 0.5px;
-margin-bottom: 70px ;
+margin-bottom: clamp(30px,4.5vw,70px) ;
 }
 .colp{
     display: flex;
@@ -19,7 +21,7 @@ margin-bottom: 70px ;
 .colp p{
     color: #151515;
     font-family: Manrope;
-    font-size: 18px;
+    font-size: clamp(15px,2.5vw,18px);
     font-style: normal;
     font-weight: 400;
     line-height: 160%; /* 28.8px */
@@ -36,7 +38,7 @@ gap: 61px;
 .colp2 h6{
     color: #151515;
 font-family: Manrope;
-font-size: 18px;
+font-size: clamp(13px,2.5vw,18px);
 font-style: normal;
 font-weight: 400;
 line-height: 160%; /* 28.8px */
@@ -45,11 +47,13 @@ letter-spacing: 0.5px;
 .colp2 span{
     color: #151515;
 font-family: Manrope;
-font-size: 18px;
+font-size: clamp(14px,2.5vw,18px);
 font-style: normal;
 font-weight: 400;
 line-height: 160%; /* 28.8px */
 letter-spacing: 0.5px;
+@media (max-width: 1040px) {
+display: none;  }
 }
 .upsubtn{
         color: #450079;
@@ -71,7 +75,7 @@ letter-spacing: 0.5px;
 .upsubtn a{
     color: #450079;
     font-family: Manrope;
-    font-size: 18px;
+    font-size: clamp(13px,2.5vw,18px);
     font-style: normal;
     font-weight: 400;
     line-height: 38.4px; /* 213.333% */

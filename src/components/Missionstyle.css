@@ -2,36 +2,25 @@
 
 
 .mcontain{
-  display: inline-flex;
-  flex-direction: column;
   align-items: center;
-  gap: auto;
   padding: 81px 0px 90px 70px;
   @media (max-width: 1040px) {
     padding: 81px 0px 90px 20px;
   }
 }
 
-.mgapoo{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: flex-start;
 
-}
 .mgrid-container {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    align-items: flex-start;
 
   }
-  /* mediaqeury */
+ 
   .mgrid-item1 {
     display: flex;
     width: 619px;
-    align-items: flex-start;
-    align-content: flex-start;
+  
     gap: 36px 41px;
     flex-wrap: wrap;
  
@@ -59,7 +48,7 @@
   .mgrid-child span{
     color: #1B1B1B;
     font-family: Manrope;
-    font-size: 40px;
+    font-size: clamp(35px,4vw,40px);
     font-style: normal;
     font-weight: 700;
     line-height: 123%; /* 49.2px */
@@ -81,7 +70,7 @@
     position: relative;
     display: inline-flex;
     align-items: center;
-    padding: 20px;
+    padding: 25px;
   }
   
   .msvg-container {
@@ -95,18 +84,18 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 50px;
+    gap: clamp(5px,2vw,50px);
   }
   .mgrid-item2 span{
     color: #151515;
-    font-size: 50px;
+    font-size: clamp(35px,4vw,50px);
     font-family: Sora;
     font-weight: 600;
     line-height: 38.4px; /* 76.8% */
     letter-spacing: 0.5px;
     font-style: normal;
-    margin-top: 70px;
-    padding-bottom: 70px;
+    margin-top: clamp(20px,4vw,70px);
+    padding-bottom: clamp(20px,4vw,70px);
   }
   .mgrid-item2 p{
     color: #151515;

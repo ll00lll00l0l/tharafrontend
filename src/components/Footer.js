@@ -53,13 +53,13 @@ const Col = styled.div`
   P{
     padding:34px 120px 0 0;
     color: #FFF;
-font-family: Manrope;
-font-size: clamp(15px,2.5vw,18px);
-font-style: normal;
-font-weight: 400;
-line-height: 160%; /* 28.8px */
-letter-spacing: 0.5px;
-text-wrap: balance;
+    font-size: clamp(15px,2.5vw,18px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */
+    letter-spacing: 0.5px;
+    text-wrap: balance;
+    font-family: Manrope;
   }
   @media (max-width: 768px) {
     p {

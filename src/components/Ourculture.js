@@ -18,7 +18,7 @@ margin-bottom:-40px;
 h2 {
   color: #151515;
   font-family: Sora;
-  font-size: 50px;
+  font-size:clamp(30px,4vw, 50px);
   font-style: normal;
   font-weight: 600;
   line-height: 38.4px;
@@ -28,7 +28,7 @@ h2 {
 p {
   color: #151515;
   font-family: Manrope;
-  font-size: 18px;
+  font-size: clamp(12px,2.5vw,18px);
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
@@ -37,16 +37,10 @@ p {
 
 @media screen and (max-width: 768px) {
   padding: 10px 20px;
+  margin-bottom:30px;
 
-  gap:20px;
+  gap:10px;
 
-  h2 {
-    font-size: 40px;
-  }
-
-  p {
-    font-size: 16px;
-  }
 }
 `;
 const Div = styled.div`
@@ -54,11 +48,11 @@ display: flex;
 
 `
 const IMGdiv = styled.div`
-img-fluid{
+/* img-fluid{
   display: 'block';
     width: '100%';
     height: 'auto';
-}
+} */
 `
 const Ourculture = () => {
   return (
