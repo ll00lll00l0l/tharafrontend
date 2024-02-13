@@ -48,8 +48,8 @@ function AboutUs() {
 
         <div className='col-md-6'>
           <div className='grid-item2'>
-            <span>Join our</span>
-            <span>Global Network</span>
+            <span>Join our Global Network</span>
+           
             <p>
               We span the globe, connecting people and cultures through our work. Join us in
               collaboration and create something truly extraordinary.

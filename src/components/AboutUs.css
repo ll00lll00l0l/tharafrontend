@@ -98,9 +98,9 @@
     font-size: clamp(30px,3vw,50px);
     font-family: Sora;
     font-weight: 600;
-    line-height: 38.4px; /* 76.8% */
     letter-spacing: 0.5px;
     font-style: normal;
+    width: 70%;
   }
   .grid-item2 p{
     color: #151515;

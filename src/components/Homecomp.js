@@ -21,7 +21,7 @@ const Divoutter = styled.div`
   flex-direction: column;
   align-items: flex-start;
   padding: 90px 70px;
-  gap: 70px;
+  gap:clamp(40px,4.5vw,70px);
   background: var(--BG-g1, linear-gradient(283deg, #B048FF -174.56%, rgba(145, 0, 255, 0.00) 109.23%));
   @media (max-width: 768px) {
     padding: 80px 20px;

@@ -24,6 +24,8 @@ const AlignmentDiv = styled.div`
 
   @media (max-width: 1200px) {
     padding: 56px 20px; 
+    justify-content: center;
+
   }
 `;
 
