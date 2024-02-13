@@ -90,8 +90,8 @@ class CompanyList extends Component {
                   <img
                     src={imagePathWithoutBaseURL}
                     alt={company.name}
-                    // className='img-fluid '
-                    // style={{ width: '250px', height: '100px' }}
+                    className='img-fluid '
+                    style={{ maxWidth: '150px', height: 'auto' }}
                   />
                 )}
                 <div key={company.id}>

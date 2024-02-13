@@ -7,6 +7,9 @@
   align-items: center;
   gap: auto;
   padding: 81px 0px 90px 70px;
+  @media (max-width: 1040px) {
+    padding: 81px 0px 90px 20px;
+  }
 }
 
 .mgapoo{

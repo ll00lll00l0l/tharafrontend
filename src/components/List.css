@@ -6,7 +6,7 @@
     padding: 81px 70px;
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1040px) {
     /* Adjust styles for screens with a maximum width of 768 pixels */
     .listbroder {
       padding:41px 20px; /* Adjust the padding for smaller screens */

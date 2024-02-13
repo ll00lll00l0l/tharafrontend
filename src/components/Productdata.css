@@ -4,6 +4,9 @@ justify-content: space-between;
 align-items: flex-start;
 gap: auto;
 padding:30px 70px;
+@media (max-width: 1040px) {
+    padding:30px 20px;
+}
 }
 
 .divimgdata img {
@@ -23,7 +26,7 @@ padding:30px 70px;
 .proddatacol div h6{
     color: #8F8F8F;
 font-family: Manrope;
-font-size: 18px;
+font-size:clamp(12px,2.3vw,18px);
 font-style: normal;
 font-weight: 400;
 line-height: 18px; /* 100% */
@@ -32,7 +35,7 @@ letter-spacing: 0.5px;
 .proddatacol div h1{
 color: #151515;
 font-family: Manrope;
-font-size: 3.3vw;
+font-size:clamp(20px,3.5vw, 30px) ;
 font-style: normal;
 font-weight: 600;
 line-height: 160%; /* 51.2px */
@@ -46,7 +49,7 @@ gap: 40px;
 .spandata p{
     color: #450079;
 font-family: Manrope;
-font-size: 18px;
+font-size:clamp(12px,2.3vw,18px);
 font-style: normal;
 font-weight: 700;
 line-height: 100%; /* 18px */
@@ -55,7 +58,7 @@ letter-spacing: 0.5px;
 .spandata p b{
     color: #8F8F8F;
 font-family: Manrope;
-font-size: 18px;
+font-size:clamp(12px,2.3vw,18px);
 font-style: normal;
 font-weight: 400;
 line-height: 100%; /* 18px */
