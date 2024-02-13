@@ -13,7 +13,7 @@
     overflow: hidden;
 
 }
-@media (max-width: 768px) {
+@media (max-width: 1040px) {
     .outterdiv {
       flex-direction: column;
       padding: 60px 20px;

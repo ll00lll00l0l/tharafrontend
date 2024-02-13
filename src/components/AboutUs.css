@@ -7,6 +7,12 @@
  
   padding: 81px 0px 90px 70px;
 } 
+@media (max-width: 1040px) {
+  .contain {
+    
+    padding: 60px 20px;
+  }
+} 
 .aboutflex{
   display: flex;
   flex-wrap: wrap;
@@ -109,11 +115,11 @@
   .grid-child2{
     padding: 30px 30px ;
     border-radius: 20px;
-  border: 1px solid #AEAEAE;
-  width: clamp(619px,20vw,200px);
-  height: 253px;
-  color: #fff;
-  background: radial-gradient(circle at 0% 0%, #450079 50%, transparent 0%);
+    border: 1px solid #AEAEAE;
+    width: clamp(619px,20vw,200px);
+    height: 253px;
+    color: #fff;
+    background: radial-gradient(circle at 0% 0%, #450079 50%, transparent 0%);
     background-position: 100% 50%;
     background-size: 400% 400%;
     transition: background 1000ms ease-in-out, color 800ms ease-in-out;
