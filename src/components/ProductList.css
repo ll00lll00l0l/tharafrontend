@@ -115,7 +115,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 35px;
-  margin: 10px 50px;
+  margin: 10px clamp(20px,5vw,8.3vw);
 }
 
 .probrod {

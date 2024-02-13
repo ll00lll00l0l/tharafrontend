@@ -46,7 +46,7 @@ const P = styled.p`
 const H1 = styled.h1`
   color: #fff;
   font-family: Sora;
-  font-size: 60px;
+  font-size: clamp(40px,4.5vw,60px);
   font-style: normal;
   font-weight: 600;
   line-height: 38.4px;

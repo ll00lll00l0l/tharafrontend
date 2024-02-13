@@ -46,7 +46,7 @@ const P = styled.p`
 const H1 = styled.h1`
   color: #fff;
   font-family: Sora;
-  font-size: clamp(40px,6vw,60px);
+  font-size: clamp(30px,6vw,60px);
   font-style: normal;
   font-weight: 600;
   line-height: 38.4px;
@@ -74,11 +74,11 @@ width: 432.469px;
 line-height: 160%; /* 51.2px */
 margin-bottom:17px;
 text-wrap: balance;
-/* 
+
 @media (max-width: 768px) {
   display:none; 
  
-  }   */
+  }  
 `
 const Gparh = styled.p`
 color: #FFF;

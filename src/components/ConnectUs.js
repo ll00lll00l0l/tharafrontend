@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
   padding: 140.214px 70px;
  
 
-  @media (max-width: 768px) {
+  @media (max-width: 1040px) {
     padding: 70px 20px; 
   }
 `;
@@ -24,6 +24,7 @@ const AlignmentDiv = styled.div`
 
   @media (max-width: 1200px) {
     padding: 56px 20px; 
+    gap:20px;   
     justify-content: center;
 
   }
@@ -45,15 +46,14 @@ const InnerDiv = styled.div`
 const Paragraph = styled.p`
   color: #151515;
   font-family: Sora;
-  font-size: 40px;
+  font-size: clamp(27px,3.4vw,40px);
   font-style: normal;
   font-weight: 600;
   line-height: 38.4px; /* 96% */
   letter-spacing: 0.5px;
 
   @media (max-width: 768px) {
-    font-size: 24px; 
-    line-height: 1.2;
+  
   }
 `;
 
