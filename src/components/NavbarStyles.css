@@ -33,7 +33,7 @@
 .nav-menu li.active {
     
     font-family: Manrope;
-    font-size: 18px;
+    font-size: 10px;
    font-style: normal;
    font-weight: 400;
    line-height: 160%; 
@@ -75,7 +75,7 @@
     text-align: center;
     color: #000;
     font-family: Manrope;
-    font-size: clamp(14px,3vw,18px);
+    font-size: clamp(13px,3vw,18px);
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
@@ -101,12 +101,11 @@
 @media screen and (max-width:1040px) {
     .nav-menu{
         flex-direction: column;
-        justify-content:none;
-        align-items: center;
+        align-items: left;
         width:100%;
-        height: auto;
+        height: 100vh;
         position:absolute;
-        gap: 10px;
+        gap: 5px;
         top: 0%;
         left: -100%;
         background: rgba(0, 0, 0, 0.5); 
@@ -118,18 +117,26 @@
     }
     .nav-menu.active{
         left:0;
+        align-items: left;
+     
 
     }
-  
+    .nav-menu li.active{
+        border-bottom:0px;
+    }
     .nav-menu li{
         padding: 1rem 0;
-       
     }
     .nav-menu li a {
-        font-size: 2rem;
+        font-size: 18px;
+        
     }
     .nav-dropdown {
         position: relative;
+        background:none;
+    }
+    .nav-dropdown li a {
+        color:#A6A6A6 ;
     }
 .hamburger{
     display: initial;
