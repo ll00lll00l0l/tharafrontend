@@ -28,7 +28,7 @@ h2 {
 p {
   color: #151515;
   font-family: Manrope;
-  font-size: clamp(12px,2.5vw,18px);
+  font-size: clamp(14px,2.5vw,18px);
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
@@ -58,9 +58,9 @@ const Ourculture = () => {
   return (
     <Outdiv className="container-fluid">
       <Div className='row '>
-        <Innerdiv className='col-6'>
+        <Innerdiv className='col-md-6'>
           <h2 className='text-dark font-weight-bold'>Our Culture</h2>
-          <p className='text-dark font-family-Sora font-size-50 font-weight-600 line-height-38.4px letter-spacing-0.5px'>
+          <p className=''>
           We offer a competitive salary and benefits package, as well as opportunities
            for training and development.
            We are also committed to diversity and inclusion, 
@@ -87,8 +87,8 @@ const Ourculture = () => {
                     </button>
                   </div>
         </Innerdiv>
-        <IMGdiv className='col-6'>
-          <img src={Ourcultphoto} alt='' className='img-fluid container-fluid' />
+        <IMGdiv className='col-md-6'>
+          <img src={Ourcultphoto} alt='' className=' container-fluid' />
         </IMGdiv>
       </Div>
     </Outdiv>
