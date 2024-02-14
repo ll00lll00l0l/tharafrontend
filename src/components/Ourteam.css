@@ -16,7 +16,7 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    gap: 30px;
+    gap: clamp(15px, 2vw, 30px);
 }
 .teamcol  h1{
     color: #151515;
@@ -30,14 +30,14 @@
 .teamcol div {
     display: flex;
     align-items: flex-start;
-    gap: 20px;
+    gap: clamp(10px, 2vw, 15px);
 }
 
 .teamcol div img {
-    width: 101.24px;
-    height: 101.24px;
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
 }
-
 .teamcol div {
     display: flex;
     flex-wrap: wrap;
@@ -49,12 +49,13 @@
     flex-direction: column;
     gap: 1px;
     flex-wrap: wrap;
+    
 }
 
 .teamcol div div h6 {
     color: #151515;
     font-family: Manrope;
-    font-size: clamp(15,2vw,18px);
+    font-size: clamp(12px,2vw,18px);
     font-style: normal;
     font-weight: 700;
     line-height: 160%;
@@ -63,7 +64,7 @@
 
 .teamcol div div span {
     color: #151515;
-    font-size: clamp(15,2vw,18px);
+    font-size: clamp(12px,2vw,18px);
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
@@ -74,7 +75,7 @@
 .teamcol2{
     display: flex;
    max-width: 711.51px;
-   padding: 70px;
+   padding: 70px ;
    flex-direction: column;
    align-items: flex-start;
    flex-shrink: 0;
@@ -84,6 +85,7 @@
 @media (max-width: 1040px) {
     .teamcol2 {
         padding: 3vw; 
+        margin-top: 20px;
     }
 }
 

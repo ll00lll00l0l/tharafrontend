@@ -26,7 +26,7 @@ const ResponsiveHeading = styled.h1`
 `;
 const AboutSection = styled.section`
   color: #151515;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Manrope';
   font-size: 1.2rem; /* Adjust the font size for smaller screens */
   font-weight: 400;
   line-height: 1.6;
