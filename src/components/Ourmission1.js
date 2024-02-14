@@ -123,8 +123,7 @@ const Divder = styled.div`
     padding: 30px 30px ;
     border-radius: 20px;
   border: 1px solid #AEAEAE;
-  width: auto; 
-  max-width: 344px; 
+  width: 344px; 
   height: 237px;
   flex-shrink: 0;
   color: #fff;

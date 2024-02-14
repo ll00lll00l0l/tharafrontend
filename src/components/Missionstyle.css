@@ -20,14 +20,12 @@
   .mgrid-item1 {
     display: flex;
     width: 619px;
-  
     gap: 36px 41px;
     flex-wrap: wrap;
  
   }
   .mgrid-child {
     width: 289px;
-    height: 205px;
     flex-shrink: 0;
     border-radius: 20px;
     border: 1px solid #AEAEAE;
@@ -54,7 +52,7 @@
     line-height: 123%; /* 49.2px */
     letter-spacing: -1.2px;
     text-transform: capitalize;
-    padding: 24px 325px 67px 31px;
+    padding: 24px 35px 67px 31px;
   }
   .mgrid-child:hover span ,
   .mgrid-child:hover p{

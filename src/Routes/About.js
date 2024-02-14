@@ -5,6 +5,7 @@ import ConnectUs from '../components/ConnectUs.js';
 import Footer from '../components/Footer.js';
 import Banner from '../components/Bannerabout.js';
 import Misson1 from '../components/Ourmission1.js';
+import Ourteam from '../components/Ourteam.js';
 
 
 const About = () => {
@@ -14,6 +15,7 @@ const About = () => {
      <Misson1/>
      <Routes>
       </Routes>
+      <Ourteam/>
       <ConnectUs/>
       <Footer/>
     </div>

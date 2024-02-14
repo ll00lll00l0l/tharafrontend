@@ -47,13 +47,11 @@ letter-spacing: 0.5px;
 .colp2 span{
     color: #151515;
 font-family: Manrope;
-font-size: clamp(14px,2.5vw,18px);
+font-size: 20px;
 font-style: normal;
 font-weight: 400;
 line-height: 160%; /* 28.8px */
 letter-spacing: 0.5px;
-@media (max-width: 1040px) {
-display: none;  }
 }
 .upsubtn{
         color: #450079;

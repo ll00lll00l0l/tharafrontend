@@ -1,0 +1,104 @@
+.teambroder{
+    padding: 120px 70px;
+}
+
+.teamrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.teamcol{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+}
+.teamcol  h1{
+    color: #151515;
+    font-size: clamp(30px,4vw,50px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38.4px; 
+    letter-spacing: 0.5px;
+    font-family: Sora;
+}
+.teamcol div {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.teamcol div img {
+    width: 101.24px;
+    height: 101.24px;
+}
+
+.teamcol div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; 
+}
+.teamcol div div{
+    display: flex;
+    padding-top: 25px;
+    flex-direction: column;
+    gap: 1px;
+    flex-wrap: wrap;
+}
+
+.teamcol div div h6 {
+    color: #151515;
+    font-family: Manrope;
+    font-size: clamp(15,2vw,18px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    margin: 0; /* Remove any default margins */
+}
+
+.teamcol div div span {
+    color: #151515;
+    font-size: clamp(15,2vw,18px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    font-family: Manrope;
+    margin: 0; /* Remove any default margins */
+}
+
+.teamcol2{
+    display: flex;
+   max-width: 711.51px;
+   padding: 70px;
+   flex-direction: column;
+   align-items: flex-start;
+   flex-shrink: 0;
+    border-radius: 20px;
+   background: var(--BG-g1, linear-gradient(283deg, #B048FF -174.56%, rgba(145, 0, 255, 0.00) 109.23%));
+}
+.teamcol2 p {
+    color: #151515;
+    font-size: clamp(20px,2.5vw,32px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 51.2px */
+    font-family: Manrope;
+
+}
+.teamcol2  h6{
+    color: #151515;
+font-family: Manrope;
+font-size: clamp(15px,1.6vw,18px);
+font-style: normal;
+font-weight: 700;
+line-height: 321.5%;
+}
+.teamcol2 span{
+    color: #151515;
+    font-size: clamp(15px,1.6vw,18px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    font-family: Manrope;
+}
