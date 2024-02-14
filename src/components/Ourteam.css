@@ -30,17 +30,18 @@
 .teamcol div {
     display: flex;
     align-items: flex-start;
+    flex-wrap: nowrap;
     gap: clamp(10px, 2vw, 15px);
 }
 
-.teamcol div img {
-    max-width: 100%; 
+.teamcol div  img {
+    width: 20%; 
     height: auto; 
-    display: block; 
+   
 }
 .teamcol div {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: flex-start; 
 }
 .teamcol div div{
@@ -48,11 +49,11 @@
     padding-top: 25px;
     flex-direction: column;
     gap: 1px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     
 }
 
-.teamcol div div h6 {
+.teamcol div div h5 {
     color: #151515;
     font-family: Manrope;
     font-size: clamp(12px,2vw,18px);
@@ -62,13 +63,15 @@
     margin: 0; /* Remove any default margins */
 }
 
-.teamcol div div span {
+.teamcol div div h6 {
     color: #151515;
+    flex-wrap: wrap;
     font-size: clamp(12px,2vw,18px);
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
     font-family: Manrope;
+    text-wrap: balance;
     margin: 0; /* Remove any default margins */
 }
 

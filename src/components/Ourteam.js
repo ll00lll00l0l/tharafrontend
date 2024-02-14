@@ -13,18 +13,18 @@ function ourteam() {
     
           <div>
           <img src={Team1} alt='' className='img-fuild' />
-           <div><h6>Ummer Kongan</h6>
-         <span>Founder & Managing Director, Thara Group</span></div>
+           <div><h5>Ummer Kongan</h5>
+         <h6>Founder & Managing Director, Thara Group</h6></div>
           </div>
           <div>
           <img src={Team1} alt='' className='img-fuild'/>
-          <div><h6>Naji Kongan</h6>
-          <span>Founder & Executive Director, Thara Group</span></div>
+          <div><h5>Naji Kongan</h5>
+          <h6>Founder & Executive Director, Thara Group</h6></div>
           </div>
           <div>
           <img src={Team1} alt=''className='img-fuild'/>
-          <div><h6>Nadeem Kongan</h6>
-          <span>Marketing & Executive Director, Thara Group</span></div>
+          <div><h5>Nadeem Kongan</h5>
+          <h6>Marketing & Executive Director, Thara Group</h6></div>
           </div>
         </div>
         <div className='teamcol2 col-md-6'>
