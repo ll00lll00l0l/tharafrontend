@@ -49,7 +49,13 @@ p {
 `;
 const Div = styled.div`
 display: flex;
-
+`
+const IMGdiv = styled.div`
+@media screen and (max-width: 1040px) {
+ img{
+  display:none;
+ }
+}
 `
 const Ourhq = () => {
   return (
@@ -64,9 +70,9 @@ const Ourhq = () => {
             Dt,Kerala,India - 679322
           </p>
         </Innerdiv>
-        <div className='col-6'>
+        <IMGdiv className='col-6'>
           <img src={Ourhqphoto} alt='' className='img-fluid' />
-        </div>
+        </IMGdiv>
       </Div>
     </Outdiv>
   );

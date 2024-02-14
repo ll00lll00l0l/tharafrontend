@@ -20,7 +20,6 @@ form {
   
   .formrow {
     display: flex;
-    width: 1301px;
     justify-content: space-between;
     /* align-items: center; */
   }
@@ -28,6 +27,7 @@ form {
   .formcol {
     display: flex;
     padding: 20px;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
@@ -83,6 +83,7 @@ form {
   .formcol2 {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: flex-start;
     gap: 70px;
   }
@@ -97,15 +98,21 @@ form {
   .address {
     display: flex;
     align-items: flex-start;
-    gap: 82px;
+    flex-wrap: wrap;
+    gap: 20px;
   }
   
   .address span {
     display: flex;
+    flex-wrap: nowrap;
     align-items: flex-end;
+    text-wrap: balance;
     gap: 24px;
   }
-  
+  .formcol2 iframe{
+    width:50vw;
+   
+  }
   @media screen and (max-width: 768px) {
     .formalignn {
       gap: 20px;
@@ -130,7 +137,7 @@ form {
       width: 100%;
     }
     .formcol2 iframe{
-      width:350px;
+      width:300px;
       height:auto;
     }
   

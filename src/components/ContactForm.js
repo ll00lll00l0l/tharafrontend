@@ -73,7 +73,7 @@ const ContactForm = () => {
                     </form>
                 </div>
                 <div className="  col-md-6">
-                    <div className=" formcol2 embed-responsive embed-responsive-16by9 mb-3">
+                    <div className=" formcol2">
                         <iframe
                             title="Location Map"
                             className="embed-responsive-item"
