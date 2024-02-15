@@ -1,7 +1,14 @@
 .yearbroder {
   padding: 90px 70px;
-}
 
+}
+@media (max-width: 1040px) {
+  .yearbroder{
+    padding: 30px 20px; 
+
+  }
+  
+}
 .yearbroder h3 {
   color: #151515;
   font-family: Sora;
@@ -72,7 +79,7 @@
 .yearrow{
   display: flex;
   flex-wrap:wrap;
-padding: 60px  ;
+padding-top: 60px  ;
 gap: 20px;
 }
 .yearrow img {
