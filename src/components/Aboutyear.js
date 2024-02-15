@@ -10,7 +10,7 @@ function Aboutyear() {
     { year: 1992, data: ' Launches the Kiddies brand of lollipops and coconut candies.' },
     { year: 1996, data: 'Establishes the Tofomac brand for other products.' },
     { year: 2002, data: 'Shifts focus to trading and importing biscuits, confectioneries, and chocolates.' },
-    { year: 2017, data: 'tarts importing instant noodles.' },
+    { year: 2017, data: 'starts importing instant noodles.' },
     { year: 2020, data: 'Launches the Thara Online Store.' },
     { year: 2023, data: 'Expands into e-commerce logistics with the launch of Tharacart.' }
   ];

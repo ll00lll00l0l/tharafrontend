@@ -70,31 +70,38 @@
   color: white;
 }
 .yearrow{
+  display: flex;
+  flex-wrap:wrap;
 padding: 60px  ;
-gap: auto;
+gap: 20px;
 }
 .yearrow img {
   border-radius: 20px;
-  max-width: 500px;
-  min-width: 300px;
-  height: auto;
+  min-width:200px;
 border: 1px solid #AEAEAE;
 
+}
+.yearcol{
+  flex: 1;
+  flex-shrink: 1;
 }
 .yearcol h3{
   color: #151515;
   font-family: Manrope;
-  font-size: clamp(20px,3vw,32px);
+  font-size: clamp(18px,3vw,32px);
   font-style: normal;
+  white-space: nowrap;
   font-weight: 400;
-  line-height: 160%; /* 51.2px */
+  padding-bottom:20px ;
 }
 .yearcol p{
   color: #151515;
 font-family: Manrope;
-font-size: clamp(15px,2vw,18px);
+font-size: clamp(13px,2vw,18px);
 font-style: normal;
 font-weight: 400;
 line-height: 160%; /* 28.8px */
 letter-spacing: 0.5px;
+text-wrap: balance;
+
 }
