@@ -6,6 +6,7 @@ import Footer from '../components/Footer.js';
 import Banner from '../components/Bannerabout.js';
 import Misson1 from '../components/Ourmission1.js';
 import Ourteam from '../components/Ourteam.js';
+import Aboutyear from '../components/Aboutyear.js';
 
 
 const About = () => {
@@ -16,6 +17,7 @@ const About = () => {
      <Routes>
       </Routes>
       <Ourteam/>
+      <Aboutyear/>
       <ConnectUs/>
       <Footer/>
     </div>

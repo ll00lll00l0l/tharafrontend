@@ -1,0 +1,100 @@
+.yearbroder {
+  padding: 90px 70px;
+}
+
+.yearbroder h3 {
+  color: #151515;
+  font-family: Sora;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38.4px; /* 76.8% */
+  letter-spacing: 0.5px;
+  padding-bottom: 60px;
+}
+
+.button-list {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 45px;
+  position: relative;
+  margin-top: 30px; /* Add some space between the heading and buttons */
+}
+
+.button-list::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+} 
+
+.button-list button {
+  position: relative; /* Add this line */
+  display: flex;
+  padding: 10px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 54px;
+  background: #E6E6E6;
+  position: relative;
+  border: 0px;
+  color: #44156A;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+  letter-spacing: 0.5px;
+  max-width: 200px; /* Adjust the max-width as needed */
+  text-align: center; /* Optional: Centers the text within the button */
+}
+
+.button-list button::before {
+  content: '';
+  position: absolute;
+  left: -45px; /* Half of the gap */
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 45px;
+  background: #E6E6E6;
+}
+
+.svg-icon{
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.button-list button.active {
+  background-color: #44156A;
+  color: white;
+}
+.yearrow{
+padding: 60px  ;
+gap: auto;
+}
+.yearrow img {
+  border-radius: 20px;
+  max-width: 500px;
+  min-width: 300px;
+  height: auto;
+border: 1px solid #AEAEAE;
+
+}
+.yearcol h3{
+  color: #151515;
+  font-family: Manrope;
+  font-size: clamp(20px,3vw,32px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 51.2px */
+}
+.yearcol p{
+  color: #151515;
+font-family: Manrope;
+font-size: clamp(15px,2vw,18px);
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 28.8px */
+letter-spacing: 0.5px;
+}
