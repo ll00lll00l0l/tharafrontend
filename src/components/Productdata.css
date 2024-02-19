@@ -28,7 +28,6 @@ font-family: Manrope;
 font-size:clamp(12px,2.3vw,18px);
 font-style: normal;
 font-weight: 400;
-line-height: 18px; /* 100% */
 letter-spacing: 0.5px;
 }
 .proddatacol div h1{

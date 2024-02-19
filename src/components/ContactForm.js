@@ -63,7 +63,7 @@ const ContactForm = () => {
                             <textarea className="formcontrol2" id="formMessage" rows={4} placeholder="Your message" value={message} onChange={(e) => setMessage(e.target.value)} ></textarea>
                         </div>
                         <div className="arrow-container">
-                          <button className="btn-purple" type='submit' id="btnToHide">
+                          <button className="btn-purple" type='submit' >
                         Submit
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 31 31" fill="none" className='arrow'>
                   <path d="M17.4016 8L24.6932 15.5M24.6932 15.5L17.4016 23M24.6932 15.5L7.19324 15.5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
