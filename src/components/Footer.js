@@ -10,12 +10,12 @@ import youtube from '../assets/img/youtube.png';
 
 
 const FooterWrapper = styled.footer`
-  padding: 100px 0px 0;
+  padding: 100px 20px 0px 0px;
   background-color: #450079;
   color: #fff;
   position: relative;
-  @media (max-width: 768px) {
-    padding: 70px 0px 0;
+  @media (max-width: 1040px) {
+    padding: 70px 10px 0;
   }
 `;
 
@@ -121,29 +121,20 @@ const SocialIcons = styled.div`
 `;
 
 const Attribution = styled.div`
-  span {
-    display: flex;
-    gap: 882px;
-  }
-    p {
-      color: #B57BE1;
-      font-family: Manrope;
-      font-size:clamp(12px,1.3vw,18px); 
-       font-style: normal;
-      font-weight: 400;
-      line-height: 38.4px; 
-      letter-spacing: 0.5px;
-    }
-  
-
-  @media (max-width: 768px) {
-    span {
-      gap: 16px;
-      justify-content:center;
-    }
-   
+  display: flex;
+  justify-content:space-between;
+  p {
+    color: #B57BE1;
+    font-family: Manrope;
+    font-size: clamp(0.75rem, 1.3vw, 1rem); /* Use clamp for responsive font-size */
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2; /* Use unitless value for line-height for better responsiveness */
+    letter-spacing: 0.5px;
+    white-space: nowrap;
   }
 `;
+
 
 function Footer() {
   return (
@@ -190,8 +181,8 @@ function Footer() {
           </Row>
         </FrameWork>
         <Attribution>
-          <span><p>C© 2023 Thara & Co</p>
-          <p>Designed by Akhil Venthodika</p></span>
+          <p>C© 2023 Thara & Co</p>
+          <p>Designed by Akhil Venthodika</p>
         </Attribution>
       </FooterBody>
     </FooterWrapper>

@@ -22,6 +22,8 @@ h2 {
   font-weight: 600;
   line-height: 38.4px;
   letter-spacing: 0.5px;
+  text-wrap: balance;
+
 }
 
 p {
@@ -62,8 +64,8 @@ const Ourhq = () => {
     <Outdiv className="container-fluid">
       <Div className='row '>
         <Innerdiv className='col-6'>
-          <h2 className='text-dark font-weight-bold'>Our HQ</h2>
-          <p className='text-dark font-family-Sora font-size-50 font-weight-600 line-height-38.4px letter-spacing-0.5px'>
+          <h2 className=''>Our HQ</h2>
+          <p>
             Thara Trading CoSree Complex,
             Near HDFC Bank Calicut Road,
             Perinthalmanna,Malappuram
