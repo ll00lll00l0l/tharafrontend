@@ -38,7 +38,7 @@ function AboutUs() {
                   <div className='svg-container'>
                     <SVG className='imgsvg' caseValue='case10' />
                      </div></div>
-                    <div><span>More than 20</span>
+                    <div className='textcontent'><span>More than 20</span>
                     <p>International Brands are collaborated with Us</p></div>
                 </div>
               </div>
@@ -46,7 +46,7 @@ function AboutUs() {
           </div>
         </div>
 
-        <div className='col-md-6'>
+        <div className='col-md-6 '>
           <div className='grid-item2'>
             <span>Join our Global Network</span>
            

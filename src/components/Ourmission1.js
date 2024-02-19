@@ -46,8 +46,7 @@ const Outdivv = styled.div`
 const Div1 = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 70px;
+  margin-top: 4.375rem;
 
   p {
     display: flex;
@@ -72,9 +71,11 @@ const Div1 = styled.div`
 
 const Div2 = styled.div`
   display: flex;
+
   flex-direction: column;
   align-items: flex-start;
-    gap: 70px;
+  margin-top:4.375rem;
+
 
   p {
     color: #151515;
@@ -89,7 +90,8 @@ const Div2 = styled.div`
 
    @media (max-width: 1040px) {
     align-items: center;
-  
+    margin-top:1.375rem;
+
     gap: 20px;
 
  
