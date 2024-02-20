@@ -134,16 +134,17 @@ const ProductDetail = () => {
                 .map((filteredItem) => {
                   const filteredItemWithoutBaseURL = filteredItem?.image?.replace('https://0.0.0.0:9090', newBaseURL);
                   return (
-                    <div key={filteredItem.id} className='Similarproddata'>
+                    <div className='Similarproddata'>
+                    <div key={filteredItem.id} >
                       {filteredItem.image && (
                         <img
                           src={filteredItemWithoutBaseURL}
                           alt={filteredItem.name}
-                          style={{ width: '150px', height: '100%' }}
+                          style={{ width: '250px', height: '100%' }}
                         />
                       )}
-                      <h6>{filteredItem.name}</h6>
-                    </div>
+                      <Link to={`/product/${filteredItem.id}`}>{filteredItem.name}</Link>
+                    </div></div>
                   );
                 })}
             </div>

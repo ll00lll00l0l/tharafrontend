@@ -119,7 +119,7 @@ class BrandList extends Component {
                         </span>
                       </div>
                       <div className=' listcol2 col-md-6'>
-                        <b>Featured Brands :</b>
+                        <b>Featured Products :</b>
                         {items
                           .filter((item) => item.brand === brand.name)
                           .map((filteredItem) => (
@@ -131,11 +131,11 @@ class BrandList extends Component {
                                   const imagePathWithoutBaseURL = filteredItem.image.replace('https://0.0.0.0:9090', newBaseURL);
 
                                   return (
-                                    <img
+                                    <Link  to={`/product/${filteredItem.id}`}><img
                                       src={imagePathWithoutBaseURL}  // Use the corrected imagePathWithoutBaseURL
                                       alt={filteredItem.name}
                                       style={{ width: '150px', height: '100%' }}
-                                    />
+                                    /></Link>
                                   );
                                 })()
                               )}

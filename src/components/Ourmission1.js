@@ -2,6 +2,8 @@ import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Misvis from '../assets/img/missvis.png';
+import SVG  from './Allsvgcomp.js'; 
+
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -56,16 +58,14 @@ const Div1 = styled.div`
     justify-content: center;
     color: #151515;
     font-family: Manrope;
-    font-size:clamp(18px,4vw, 32px);
+    font-size:clamp(18px,4vw,32px);
     font-style: normal;
     font-weight: 400;
     line-height: 160%;
   }
 
   @media (max-width: 768px) {
-    align-items: flex-start;
-    margin-top: 20px;
-
+   display:none;
   }
 `;
 
@@ -109,13 +109,14 @@ const Broddiv2 = styled.div`
 
 const Indiv = styled.div`
     display: flex;
-  align-items: flex-start;
-  flex-wrap:wrap;
     gap: 40px;
-
-  @media (max-width: 768px) {
-  flex-direction: column;
+ img{
+  height: 235.083px;
+ }
+  @media (max-width: 1040px) {
   align-items: center;
+  justify-content:center;
+  flex-wrap:wrap;
   gap: 20px;
   }
 `;
@@ -127,7 +128,7 @@ const Divder = styled.div`
   border: 1px solid #AEAEAE;
   width: 344px; 
   height: 237px;
-  flex-shrink: 0;
+  flex-shrink: 1;
   color: #fff;
   background: radial-gradient(circle at 0% 0%, #450079 50%, transparent 0%);
     background-position: 100% 50%;
@@ -140,8 +141,8 @@ const Divder = styled.div`
 
 
 .grid-childmission span{
-    font-family: DM Sans;
-    font-size: 48px;
+  font-family: Manrope;
+    font-size: clamp(40px,3vw,48px);
     font-style: normal;
     font-weight: 700;
     line-height: 123%; /* 59.04px */
@@ -166,21 +167,21 @@ const Divder = styled.div`
     gap: 3px;
   }
 
-  span {
+  /* span {
     color: #1b1b1b;
     font-family: Manrope;
-    font-size: 18px;
+    font-size: clamp(12px,.5vw,18px);
     font-style: normal;
     font-weight: 700;
     line-height: 123%;
     letter-spacing: -0.2px;
     text-transform: capitalize;
-  }
+  } */
 
   p {
     color: #2f2f2f;
     font-family: Manrope;
-    font-size: 24px;
+    font-size: clamp(20px,1.5vw,24px);
     font-style: normal;
     font-weight: 400;
     line-height: 123%;
@@ -221,53 +222,21 @@ const Ourmission1 = () => {
           <Divder>
             <div className=' grid-childmission'>
           <div className='image-container'>
-                  <svg  className='Ellipse-img'xmlns="http://www.w3.org/2000/svg" width="60" height="61" viewBox="0 0 60 61" fill="none">
-                   <circle cx="30.3408" cy="30.6431" r="29.665" fill="#EFEFEF"/>
-                  </svg>
+                  <SVG className='imgsvg' caseValue='case11' />
                   <div className='svg-container'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='42'
-                      height='42'
-                      viewBox='0 0 42 42'
-                      fill='none'
-                    >
-                      <path
-                        d='M4.8829 29.0784L14.0669 20.2476L21.9389 27.8169L37.6829 12.6784M37.6829 12.6784H25.8749M37.6829 12.6784V24.0322'
-                        stroke='black'
-                        strokeWidth='2'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                      />
-                    </svg>
+                    <SVG className='imgsvg' caseValue='case10' />
                      </div></div>
-                    <div><span>10+</span>
+                    <div className='textcontent'><span>10+</span>
                     <p>Companies In Thara</p></div></div>
           </Divder>
           <Divder>
             <div className='grid-childmission'>
             <div className='image-container'>
-                  <svg  className='Ellipse-img'xmlns="http://www.w3.org/2000/svg" width="60" height="61" viewBox="0 0 60 61" fill="none">
-                   <circle cx="30.3408" cy="30.6431" r="29.665" fill="#EFEFEF"/>
-                  </svg>
+                  <SVG className='imgsvg' caseValue='case11' />
                   <div className='svg-container'>
-                    <svg
-                      xmlns='http://www.w3.org/2000/svg'
-                      width='42'
-                      height='42'
-                      viewBox='0 0 42 42'
-                      fill='none'
-                    >
-                      <path
-                        d='M4.8829 29.0784L14.0669 20.2476L21.9389 27.8169L37.6829 12.6784M37.6829 12.6784H25.8749M37.6829 12.6784V24.0322'
-                        stroke='black'
-                        strokeWidth='2'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                      />
-                    </svg>
+                    <SVG className='imgsvg' caseValue='case10' />
                      </div></div>
-                    <div><span>40 Years</span>
+                    <div className='textcontent'><span>40 Years</span>
                     <p>of Successful Trading</p></div>
                 </div>
           </Divder>

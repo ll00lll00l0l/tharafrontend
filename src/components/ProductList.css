@@ -130,6 +130,8 @@
   flex-direction: column;
   flex: 1; /* This will make flex items grow and shrink */
   max-width: 300px;
+  gap: 16px;
+
  
 }
 
@@ -179,10 +181,44 @@ line-height: 160%; /* 28.8px */
 letter-spacing: 0.5px;  
 }
 .Similarprod{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 32px;
+ b{
   color: #151515;
 font-family: Manrope;
 font-size: 32px;
 font-style: normal;
 font-weight: 400;
-line-height: 160%; /* 51.2px */
+line-height: 160%;
+}
+}
+.Similarproddata{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+gap: 35px;
+overflow-x: scroll;
+}
+.Similarproddata::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+} 
+.Similarproddata div {
+  display: flex;
+  flex-direction: column;
+  flex: 1; 
+  max-width: 250px;
+ 
+}
+.Similarproddata div a {
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  display: block;
+  color: #151515;
+  text-decoration: none;
+  text-align: center;
 }

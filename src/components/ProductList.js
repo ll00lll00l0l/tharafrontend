@@ -104,8 +104,9 @@ class ProductList extends Component {
       <div className='prodlistbrod'>
         <div className='prodlistoutdiv'>
           <div className='prodfilter'>
-            <div className='prodcol'>
               <p>Filter </p>
+            <div className='prodcol'>
+            
               <span>Brand:</span>
               {uniqueBrands.map((brand) => (
                 <div key={brand}>
