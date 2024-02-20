@@ -122,15 +122,15 @@ class CompanyList extends Component {
                   <div id={`collapse${company.id}`} className=' collapse'>
                     <div className='row listrow'>
                       <div className='listcol col-md-6'>
-                        <p className='py-2 text-dark'>{company.description}</p>
-                        <p className='py-2 text-dark'>
+                        <p>{company.description}</p>
+                        <p>
                           <img className='' src={Website} alt='img' />{' '}
                           <a href={company.website_link}>{company.website_link}</a>
                         </p>
-                        <p className='py-2 text-dark'>
+                        <p>
                           <img className='' src={Email} alt='img' /> <a href={company.email}>{company.email}</a>
                         </p>
-                        <span className='py-2 text-dark'>
+                        <span>
                           <img className='' src={Phone} alt='img' />&nbsp;
                           {company.phone_numbers.split(/\r?\n/).map((number, index) => (
                             <React.Fragment key={index}>

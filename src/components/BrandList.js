@@ -100,15 +100,15 @@ class BrandList extends Component {
                   <div id={`collapse${brand.id}`} className='collapse'>
                     <div className='row listrow'>
                       <div className='listcol col-md-6'>
-                        <p className='py-2 text-dark'>{brand.description}</p>
-                        <p className='py-2 text-dark'>
+                        <p>{brand.description}</p>
+                        <p>
                           <img className='' src={Website} alt='img' />{' '}
                           <a href={brand.website_link}>{brand.website_link}</a>
                         </p>
-                        <p className='py-2 text-dark'>
+                        <p>
                           <img className='' src={Email} alt='img' /> {brand.email}
                         </p>
-                        <span className='py-2 text-dark'>
+                        <span>
                           <img className='' src={Phone} alt='img' />&nbsp;
                           {brand.phone_numbers.split(/\r?\n/).map((number, index) => (
                             <React.Fragment key={index}>
