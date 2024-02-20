@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
   const Outdiv = styled.div`
   background: var(--BG-g1, linear-gradient(283deg, #B048FF -174.56%, rgba(145, 0, 255, 0.00) 109.23%));
+  justify-content:space-between;
   
  `
 const Innerdiv = styled.div`
@@ -33,6 +34,7 @@ p {
   font-weight: 400;
   line-height: 160%;
   letter-spacing: 0.5px;
+  text-wrap:wrap;
 }
 
 @media screen and (max-width: 768px) {
@@ -43,8 +45,9 @@ p {
 
 }
 `;
-const Div = styled.div`
+const Divvv = styled.div`
 display: flex;
+justify-content:space-between;
 
 `
 const IMGdiv = styled.div`
@@ -57,7 +60,7 @@ const IMGdiv = styled.div`
 const Ourculture = () => {
   return (
     <Outdiv className="container-fluid">
-      <Div className='row '>
+      <Divvv className='row '>
         <Innerdiv className='col-md-6'>
           <h2 className='text-dark font-weight-bold'>Our Culture</h2>
           <p className=''>
@@ -90,7 +93,7 @@ const Ourculture = () => {
         <IMGdiv className='col-md-6'>
           <img src={Ourcultphoto} alt='' className=' container-fluid' />
         </IMGdiv>
-      </Div>
+      </Divvv>
     </Outdiv>
   );
 };

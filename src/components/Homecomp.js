@@ -2,18 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import Group from './Allsvgcomp.js';
 
-
 const ResponsiveHeading = styled.h1`
   color: #151515;
   font-family: Sora;
-  font-size: 50px;
+  font-size: clamp(30px, 3vw, 50px);
   font-style: normal;
   font-weight: 600;
   line-height: 38.4px; /* 76.8% */
   letter-spacing: 0.5px;
-  @media (max-width: 768px) {
-    font-size: 2rem;
-  }
 `;
 
 const Divoutter = styled.div`
@@ -21,30 +17,22 @@ const Divoutter = styled.div`
   flex-direction: column;
   align-items: flex-start;
   padding: 90px 70px;
-  gap:clamp(40px,4.5vw,70px);
-  background: var(--BG-g1, linear-gradient(283deg, #B048FF -174.56%, rgba(145, 0, 255, 0.00) 109.23%));
-  @media (max-width: 768px) {
+  gap: 70px;
+  background: var(--BG-g1, linear-gradient(283deg, #b048ff -174.56%, rgba(145, 0, 255, 0.00) 109.23%));
+  @media (max-width: 1040px) {
     padding: 80px 20px;
+    gap: 30px;
   }
-
 `;
 
 const AboutSection = styled.section`
   color: #151515;
-  font-family: 'Manrope', sans-serif;
-  font-size: 1.2rem; /* Adjust the font size for smaller screens */
+  font-family: sans-serif;
+  font-size: clamp(12px, 1vw, 18px);
   font-weight: 400;
   line-height: 1.6;
   letter-spacing: 0.5px;
-  text-wrap: balance;
-
-  @media (max-width: 768px) {
-    font-size: 1rem;
-  }
-`;
-
-const Div = styled.div`
- 
+  white-space: pre-wrap;
 `;
 
 const ImageContainer = styled.div`
@@ -52,6 +40,7 @@ const ImageContainer = styled.div`
   flex-direction: column;
   align-items: center;
 `;
+
 const Sdiv = styled.div`
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -91,21 +80,26 @@ const Sdiv = styled.div`
     grid-column: 2;
   }
 
-  @media (max-width: 1250px) {
-    grid-template-columns: 1fr;
-    padding-top:20px;
-
-    .item1, .item2, .item3, .item4, .item5, .item6 {
-    grid-column: 1;
-  }
-
-  .item1 { grid-row: 1; }
-  .item2 { grid-row: 2; }
-  .item3 { grid-row: 3; }
-  .item4 { display:none}
-  .item5 { display:none }
-  .item6 { grid-row: 4; }
+  @media (max-width: 1040px) {
+    display: flex;
+  flex-wrap: nowrap;
+  width: 75vw;
+  overflow-x: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+  scroll-snap-type: inline mandatory; /* Enable horizontal snap */
 }
+
+.item {
+  scroll-snap-align: start; /* Snap each item to the start */
+}
+    &::-webkit-scrollbar {
+    display: none;
+    width:0;
+  }
+  }
 `;
 
 const Conbrod = styled.div`
@@ -129,26 +123,22 @@ const Conbrod = styled.div`
       fill: #fff;
       transition: fill 0.5s;
     }
-    .fillcolr{
-    background-position: 0;
-    fill: #450079; 
-    transition: fill 0.5s;
-  
-
+    .fillcolr {
+      background-position: 0;
+      fill: #450079;
+      transition: fill 0.5s;
+    }
   }
-  }
-`
-
+`;
 
 const GroupStyle = styled.div`
   width: auto;
   height: 20.143px;
   flex-shrink: 0;
-  background-color:white;
-  &Conbrod:hover svg path{
-   fill:white;
+  background-color: white;
+  &Conbrod:hover svg path {
+    fill: white;
   }
-
 `;
 
 const InnerDiv = styled.div`
@@ -157,7 +147,6 @@ const InnerDiv = styled.div`
   justify-content: center;
   align-items: flex-start;
   gap: 47px;
-  
 `;
 
 function Homecomp() {
@@ -165,57 +154,64 @@ function Homecomp() {
     <Divoutter>
       <ResponsiveHeading>Our Companies</ResponsiveHeading>
 
-      <AboutSection >
-        <Div className='row'>
+      <AboutSection>
+        <div className='row'>
           <InnerDiv className='col-md-6'>
             A trusted conglomerate with 10+ companies under its umbrella, offering a wide range of high-quality products and services across industries, from wholesale distribution to fashion to real estate, making your life easier and more enjoyable.
-            <div className="arrow-container">
-              <button className="btn-white">
-                Read More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="31"
-                  viewBox="0 0 30 31"
-                  fill="none"
-                  className="arrow"
-                >
-                  <path
-                    d="M16.4583 8.14621L23.75 15.6462M23.75 15.6462L16.4583 23.1462M23.75 15.6462L6.25 15.6462"
-                    stroke="#450079"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </button>
-            </div>
+            <button className="btn-white">
+              Read More
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="31"
+                viewBox="0 0 30 31"
+                fill="none"
+                className="arrow"
+              >
+                <path
+                  d="M16.4583 8.14621L23.75 15.6462M23.75 15.6462L16.4583 23.1462M23.75 15.6462L6.25 15.6462"
+                  stroke="#450079"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
           </InnerDiv>
 
           <ImageContainer className='col-md-6'>
-          <Sdiv>
-              <div className='item1'><Conbrod  >
-                <Group style={GroupStyle}  caseValue="case1" />
-              </Conbrod></div>
-              <div className='item2'><Conbrod >
-                <Group style={GroupStyle}  caseValue="case2" />
-              </Conbrod></div>
-              <div className='item3'><Conbrod >
-                <Group style={GroupStyle}  caseValue="case1" />
-              </Conbrod></div>
-              <div className='item4'><Conbrod >
-                <Group style={GroupStyle}  caseValue="case1" />
-              </Conbrod></div>
-              <div className='item5'><Conbrod >
-                <Group style={GroupStyle}  caseValue="case2" />
-              </Conbrod></div>
-              
-              <span className='item6' >
-                       & more
-              </span>          
+            <Sdiv>
+              <div className='item1'>
+                <Conbrod>
+                  <Group style={GroupStyle} caseValue="case1" />
+                </Conbrod>
+              </div>
+              <div className='item2'>
+                <Conbrod>
+                  <Group style={GroupStyle} caseValue="case2" />
+                </Conbrod>
+              </div>
+              <div className='item3'>
+                <Conbrod>
+                  <Group style={GroupStyle} caseValue="case1" />
+                </Conbrod>
+              </div>
+              <div className='item4'>
+                <Conbrod>
+                  <Group style={GroupStyle} caseValue="case1" />
+                </Conbrod>
+              </div>
+              <div className='item5'>
+                <Conbrod>
+                  <Group style={GroupStyle} caseValue="case2" />
+                </Conbrod>
+              </div>
+              <span className='item6'>
+                & more
+              </span>
             </Sdiv>
           </ImageContainer>
-        </Div>
+        </div>
       </AboutSection>
     </Divoutter>
   );

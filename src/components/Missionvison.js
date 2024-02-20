@@ -23,7 +23,7 @@ function Missionvison() {
           <div className='gapoo'>
             <div className='mgrid-container'>
               <div className='mgrid-item1 '>
-                <div className='mgrid-child  col-sm-2'>
+                <div className='mgrid-child '>
                   <div className='mimage-container'>
                    <SVG className='imgsvg' caseValue='case11' />
 
