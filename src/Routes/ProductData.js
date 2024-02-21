@@ -90,8 +90,8 @@ const ProductDetail = () => {
               <ul>
                 {product.uses.split(/\r?\n/).map((use, index) => (
                   <React.Fragment key={index}>
-                    {index > 0 && <br />&&<br />}
-                    <li> {use}</li>
+                    {index >1}
+                    <li>{use}</li>
                   </React.Fragment>
                 ))}
               </ul>

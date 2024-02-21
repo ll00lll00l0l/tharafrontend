@@ -4,7 +4,7 @@
 .contain{
   display: flex;
   flex-direction: column;
- 
+  
   padding: 81px 0px 90px 70px;
 } 
 @media (max-width: 1040px) {
@@ -13,9 +13,9 @@
     padding: 60px 20px;
   }
 } 
-.aboutflex{
-  display: flex;
-  flex-wrap: wrap;
+.flex-item1{
+  max-width: 619px;
+  
 }
 
   .grid-item1 {
@@ -29,8 +29,8 @@
   }
   .grid-child {
     padding: 30px 30px ;
-    width:clamp(289px,6vw, 200px);
-    flex-shrink: 0;
+    width:289px;
+    flex-grow:1 ;
     border-radius: 20px;
     border: 1px solid #AEAEAE;
     height: 253px;

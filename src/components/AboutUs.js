@@ -6,8 +6,8 @@ import SVG  from './Allsvgcomp.js';
 function AboutUs() {
   return (
     <div className=' contain'>
-      <div className='row' >
-        <div className='col-md-6 py-4'>
+      <div className='row flex-wrap-reverse  g-4' >
+        <div className='col-md-6'>
           <div className=''>
             <div className=' flex-item1'>
               <div className='grid-item1 '>

@@ -25,14 +25,15 @@ const Divoutter = styled.div`
   }
 `;
 
-const AboutSection = styled.section`
-  color: #151515;
-  font-family: sans-serif;
-  font-size: clamp(12px, 1vw, 18px);
-  font-weight: 400;
-  line-height: 1.6;
-  letter-spacing: 0.5px;
-  white-space: pre-wrap;
+const AboutSection = styled.div`
+  display:flex;
+   flex-wrap:nowrap;
+   justify-content:space-between;
+   gap:40px;
+  @media (max-width: 1040px) {
+  flex-wrap:wrap-reverse;
+  }
+
 `;
 
 const ImageContainer = styled.div`
@@ -82,24 +83,22 @@ const Sdiv = styled.div`
 
   @media (max-width: 1040px) {
     display: flex;
-  flex-wrap: nowrap;
-  width: 75vw;
-  overflow-x: auto;
-  align-items: center;
-  justify-content: center;
+    align-items:center;
+  overflow-x: scroll;
+  width:75vw;
   gap: 25px;
   margin-top: 20px;
-  scroll-snap-type: inline mandatory; /* Enable horizontal snap */
+  scroll-snap-type: inline mandatory; 
 }
 
 .item {
-  scroll-snap-align: start; /* Snap each item to the start */
+  scroll-snap-align: start; 
 }
     &::-webkit-scrollbar {
     display: none;
     width:0;
   }
-  }
+  
 `;
 
 const Conbrod = styled.div`
@@ -147,17 +146,25 @@ const InnerDiv = styled.div`
   justify-content: center;
   align-items: flex-start;
   gap: 47px;
+  p{
+color: #151515;
+font-family: Manrope;
+font-size: clamp(15px,2.4vw,18px);
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 28.8px */
+letter-spacing: 0.5px;
+text-wrap:wrap;
+  }
 `;
 
 function Homecomp() {
   return (
     <Divoutter>
       <ResponsiveHeading>Our Companies</ResponsiveHeading>
-
-      <AboutSection>
-        <div className='row'>
-          <InnerDiv className='col-md-6'>
-            A trusted conglomerate with 10+ companies under its umbrella, offering a wide range of high-quality products and services across industries, from wholesale distribution to fashion to real estate, making your life easier and more enjoyable.
+        <AboutSection className=''>
+          <InnerDiv className=''>
+           <p> A trusted conglomerate with 10+ companies under its umbrella, offering a wide range of high-quality products and services across industries, from wholesale distribution to fashion to real estate, making your life easier and more enjoyable.</p>
             <button className="btn-white">
               Read More
               <svg
@@ -179,7 +186,7 @@ function Homecomp() {
             </button>
           </InnerDiv>
 
-          <ImageContainer className='col-md-6'>
+          <ImageContainer className=''>
             <Sdiv>
               <div className='item1'>
                 <Conbrod>
@@ -211,8 +218,8 @@ function Homecomp() {
               </span>
             </Sdiv>
           </ImageContainer>
-        </div>
-      </AboutSection>
+        </AboutSection>
+     
     </Divoutter>
   );
 }
