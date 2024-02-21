@@ -149,7 +149,7 @@ const InnerDiv = styled.div`
   p{
 color: #151515;
 font-family: Manrope;
-font-size: clamp(15px,2.4vw,18px);
+font-size: clamp(15px,3vw,18px);
 font-style: normal;
 font-weight: 400;
 line-height: 160%; /* 28.8px */
