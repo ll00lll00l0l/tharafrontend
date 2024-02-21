@@ -96,13 +96,14 @@
 }
   .grid-item2 span{
     color: #151515;
-    font-size: clamp(30px,3vw,50px);
+    font-size: clamp(25px,3vw,50px);
     font-family: Sora;
     font-weight: 600;
     letter-spacing: 0.5px;
     font-style: normal;
     width: 70%;
     padding-bottom: 2vw;
+    text-wrap: wrap;
 
   }
   .grid-item2 p{
