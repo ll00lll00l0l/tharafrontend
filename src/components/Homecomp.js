@@ -85,7 +85,7 @@ const Sdiv = styled.div`
     display: flex;
     align-items:center;
   overflow-x: scroll;
-  width:75vw;
+  width:90vw;
   gap: 25px;
   margin-top: 20px;
   scroll-snap-type: inline mandatory; 

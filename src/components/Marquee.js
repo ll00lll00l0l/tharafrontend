@@ -32,7 +32,7 @@ const Marquee = () => {
     <BorderDiv>
       <div className='home_brand_collab'>
         <span>Our Brands & Collaborations</span>
-        <div className=" row">
+        <div className=" row flex-wrap-reverse ">
           <div className="col-md-6">
            <div className='marqgridcol1' > We as a group, sell more than <b>20+ products across India.</b> 
             Our most famous products are Indomie Noodles,

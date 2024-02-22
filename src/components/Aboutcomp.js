@@ -40,6 +40,7 @@ const AboutSection = styled.section`
 const Div = styled.section`
   display: flex;
   flex-direction: column;
+  flex-wrap:wrap-reverse;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -48,17 +49,15 @@ const Div = styled.section`
 `;
 
 const ImageContainer = styled.div`
-  /* Add styling for the image container */
   display: flex;
   justify-content: center; /* Center the image horizontally */
   align-items: center; /* Center the image vertically */
 `;
 
 const Image = styled.img`
-  /* Add styling for the image */
   max-width: 100%;
   max-height: 100%;
-  object-fit: cover; /* Adjust as needed: 'cover', 'contain', 'fill', etc. */
+  object-fit: cover; 
 `;
 const InnerDiv = styled.div`
 display: flex;
@@ -74,7 +73,7 @@ const Aboutcomp = () => {
     <BorderDiv>
       <ResponsiveHeading>About Us</ResponsiveHeading>
       <AboutSection>
-        <Div className='row'>
+        <Div className='row flex-wrap-reverse  g-4'>
           <InnerDiv className='col-md-6'>
             Thara Trading Company, established in 1987, is a leading distributor and importer/exporter of fast-moving consumer goods,
             including confections, biscuits, chocolates, and instant noodles. We trade in domestic and foreign markets,
