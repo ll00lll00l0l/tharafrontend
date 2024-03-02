@@ -43,7 +43,8 @@
   .grid-child:hover {
     background-position: 0% 0%;
     color: #fff; /* You can keep this line if you want to change the text color on hover */
-  }
+
+   }
   .grid-child span{
     color: #1B1B1B;
     font-family: Manrope;
@@ -58,12 +59,17 @@
   .grid-child:hover span ,
   .grid-child:hover p{
     color: #FFF;
+    transition: color 0.3s;
+
   }
   .grid-child:hover svg circle{ 
     fill: #261549;
+    transition: fill 0.3s;
+
   }
   .grid-child:hover svg  path {
     stroke: #FFF; /* Change this to your desired hover color */
+   
   }
   .image-container {
     position: relative;
@@ -129,15 +135,13 @@
     background: radial-gradient(circle at 0% 0%, #450079 50%, transparent 0%);
     background-position: 100% 50%;
     background-size: 400% 400%;
-    transition: background 1000ms ease-in-out, color 800ms ease-in-out;
+    transition: background 800ms ease-in-out;
 }
 
 
 .grid-child2:hover {
   background-position: 0;
-  color: #FFF;
-
-
+  color: #FFF;  
 }
 
 .grid-child2 span{
@@ -166,9 +170,13 @@ text-transform: capitalize;
 .grid-child2:hover span ,
 .grid-child2:hover p{
 color: #FFF;
+transition: color 0.3s;
+
 }
 .grid-child2:hover svg circle{ 
 fill: #261549;
+transition: fill 0.3s;
+
 }
 .grid-child2:hover svg  path {
 stroke: #FFF; /* Change this to your desired hover color */

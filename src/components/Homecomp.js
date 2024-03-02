@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Group from './Allsvgcomp.js';
+import { Link} from 'react-router-dom';
 
 const ResponsiveHeading = styled.h1`
   color: #151515;
@@ -165,25 +166,29 @@ function Homecomp() {
         <AboutSection className=''>
           <InnerDiv className=''>
            <p> A trusted conglomerate with 10+ companies under its umbrella, offering a wide range of high-quality products and services across industries, from wholesale distribution to fashion to real estate, making your life easier and more enjoyable.</p>
-            <button className="btn-white">
-              Read More
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="31"
-                viewBox="0 0 30 31"
-                fill="none"
-                className="arrow"
-              >
-                <path
-                  d="M16.4583 8.14621L23.75 15.6462M23.75 15.6462L16.4583 23.1462M23.75 15.6462L6.25 15.6462"
-                  stroke="#450079"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
+           <div className="arrow-container">
+              <Link to="/company">
+                <button className="btn-white">
+                Read More
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="31"
+                    viewBox="0 0 30 31"
+                    fill="none"
+                    className="arrow"
+                  >
+                    <path
+                      d="M16.4583 8.14621L23.75 15.6462M23.75 15.6462L16.4583 23.1462M23.75 15.6462L6.25 15.6462"
+                      stroke="#450079"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </button>
+              </Link>
+            </div>
           </InnerDiv>
 
           <ImageContainer className=''>
