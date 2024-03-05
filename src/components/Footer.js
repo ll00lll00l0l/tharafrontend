@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import tharalogo from '../assets/img/tharalogo.png';
+import tharalogo from '../assets/img/Group 4.svg';
 import phoneIcon from '../assets/img/phone-vibrate-fill.png';
 import emailIcon from '../assets/img/entypo_email.png';
 import insta from '../assets/img/insta.png';
@@ -144,7 +144,7 @@ function Footer() {
           <Row>
             <Col>
               <LogoImage src={tharalogo} alt="Thara Logo" />
-              <p>11/321, Thara Appartments, Hospital road, Perinthalmanna, Malappuram, Kerala, 679322</p>
+              <p>SREE COMPLEX, CALICUT ROAD,PERINTHALMANNA,Malappuram, Kerala, 679322</p>
             </Col>
             <Col>
               <QuickLinks>

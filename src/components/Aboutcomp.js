@@ -60,14 +60,14 @@ const Image = styled.img`
   object-fit: cover; 
 `;
 const InnerDiv = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-gap: 50px;
-text-wrap: balance;
-`
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  padding-top:2rem;
+  overflow-wrap: break-word;
+  `
 const Aboutcomp = () => {
   return (
     <BorderDiv>
@@ -75,9 +75,9 @@ const Aboutcomp = () => {
       <AboutSection>
         <Div className='row flex-wrap-reverse  g-4'>
           <InnerDiv className='col-md-6'>
-            Thara Trading Company, established in 1987, is a leading distributor and importer/exporter of fast-moving consumer goods,
-            including confections, biscuits, chocolates, and instant noodles. We trade in domestic and foreign markets,
-            and are committed to providing our customers with the highest quality products and services.
+          A Pan-India Network Connecting Businesses and Consumers Directly 
+        Thara Group's extensive PAN-India network isn't just about distribution; it's about building a vibrant business ecosystem. By streamlining the supply chain, we cut out unnecessary layers, fostering
+         professionalism, competitiveness, and fairness for all. Our thriving e-commerce marketplace amplifies this impact, offering a prosperous platform for retail and wholesale purchases at affordable prices, directly connecting businesses and customers without any middlemen.
             <div className="arrow-container">
               <Link to='/about'>
         <button className="btn-white">Read More

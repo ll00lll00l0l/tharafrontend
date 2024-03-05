@@ -22,12 +22,12 @@ function ourteam() {
           <div>
           <img src={Team2} alt=''className='img-fuild'/>
           <div><h5>Nadeem Kongan</h5>
-          <h6> Managing Director, Thara Trading Co CEO, Thara Cart</h6></div>
+          <h6> Managing Director, Thara & Co CEO,</h6></div>
           </div>
           <div>
           <img src={Team3} alt='' className='img-fuild'/>
           <div><h5>Naji Kongan</h5>
-          <h6>Managing Director, Thara Group</h6></div>
+          <h6>Managing Director, Thara </h6></div>
           </div>
         </div>
         <div className='teamcol2 col-md-6'>

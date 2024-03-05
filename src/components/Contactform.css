@@ -82,7 +82,6 @@ form {
   
   .formcol2 {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
     gap: 70px;
@@ -100,7 +99,8 @@ form {
     align-items: flex-start;
     justify-content:space-between;
     flex-wrap: wrap;
-    gap: 0px;
+    gap: 30px;
+    
   }
   
   .address span {
@@ -114,6 +114,16 @@ form {
     width:50vw;
    
   }
+  .success-message {
+    background-color: #4caf50; /* Green */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+ 
   @media screen and (max-width: 768px) {
     .formalignn {
       gap: 20px;
@@ -141,9 +151,11 @@ form {
       width:300px;
       height:auto;
     }
-  
     .address {
-      gap: 20px;
+      gap: 1rem ;
+    }
+    .address span{
+      padding-left:  3rem; ;
     }
   }
-  
+    

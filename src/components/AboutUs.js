@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
 import './AboutUs.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SVG  from './Allsvgcomp.js'; 
@@ -54,7 +56,8 @@ function AboutUs() {
               We span the globe, connecting people and cultures through our work. Join us in
               collaboration and create something truly extraordinary.
             </p>
-            <div className='arrow-container'>
+            <div className='arrow-container'> 
+            <Link to='/Contact#letstalk'>
               <button className='btn-purple'>
                 Let’s Talk
                 <svg
@@ -74,6 +77,7 @@ function AboutUs() {
                   />
                 </svg>
               </button>
+              </Link>
             </div>
           </div>
         </div>

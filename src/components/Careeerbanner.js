@@ -89,7 +89,7 @@ font-weight: 400;
 line-height: 160%; /* 28.8px */
 width: 631.444px;
 letter-spacing: 0.5px;
-text-wrap: balance;
+overflow-wrap: break-word;
 @media (max-width: 1040px) {
 display:none; 
   } 

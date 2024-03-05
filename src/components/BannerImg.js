@@ -1,8 +1,11 @@
 import React from 'react'
 import "./BannerImgStyle.css";
+import { Link } from "react-router-dom";
+
 import banner from '../assets/img/banner.png';
 import Ellipse from '../assets/img/Ellipse 2.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 
@@ -15,8 +18,8 @@ function BannerImg() {
       <div className='ban'>
       <div className='banner  '>  
       <div className="banner-info">
-        <span >You  Make</span>
-        <span>We Trade</span>
+        <span >Your Desires </span>
+        <span>Our Endeavours</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="309" height="21" viewBox="0 0 309 21" fill="none">
          <path d="M1.00348 4.14711C91.023 -2.29866 274.675 5.5266 307.275 3.64351C311.744 3.38536 92.2367 0.0132731 82.0725 20.0314" stroke="#B859FF" stroke-width="3"/>
         </svg>
@@ -27,6 +30,7 @@ function BannerImg() {
   
         
         <div className="arrow-container">
+        <Link to='/Contact#letstalk'>
         <button className="btn-white">Let’s Talk
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -45,6 +49,7 @@ function BannerImg() {
         />
       </svg>
       </button>
+      </Link >
     </div>
        
      

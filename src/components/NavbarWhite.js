@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import logo from '../assets/img/logopurp.png';
+import logo from '../assets/img/Group 2.svg';
 import './NavbarWhiteStyles.css';
 
 const useNavbar = () => {
