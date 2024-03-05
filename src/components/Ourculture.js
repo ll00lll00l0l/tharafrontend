@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link} from "react-router-dom";
+
 import Ourcultphoto from '../assets/img/ourculture.png';
 import styled from 'styled-components';
 
@@ -70,7 +72,9 @@ const Ourculture = () => {
           and we believe that our diverse team is one of our greatest strengths.
           </p>
           <div className="arrow-container">
-                    <button className="btn-white" id="hide">Veiw more
+          <Link to='/'>
+
+                    <button className="btn-white" id="hide">View more
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="30"
@@ -88,6 +92,7 @@ const Ourculture = () => {
                         />
                       </svg>
                     </button>
+                    </Link>
                   </div>
         </Innerdiv>
         <IMGdiv className='col-md-6'>
