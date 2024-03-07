@@ -26,7 +26,7 @@ align-items: center;
     .banner-info span {
       color: #FFF;
       font-family: Sora;
-      font-size: clamp(50px,7vw,60px) ;
+      font-size: clamp(40px,7vw,60px) ;
       font-style: normal;
       font-weight: 600;
       line-height: 38.4px; /* 64% */
