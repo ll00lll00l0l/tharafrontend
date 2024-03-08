@@ -3,16 +3,26 @@
 
 *{
   box-sizing: border-box;
-  margin: 0;
   font-family: "outfit",sans-serif;
 }
-body{
+html, body {
+  height: 100%;
+}
+
+body {
+
+  max-width: 2000px;
   background-color: #ffffff;
   overflow-x: hidden;
   text-size-adjust: 100%;
-
+  padding: 0;
 }
+@media screen and (min-width: 1700px) {
+  body {
+    padding: 0 15vw 0 15vw;
 
+  }
+}
 /* .btn-white{
   color: #450079;
   height: 60px;

@@ -103,7 +103,7 @@ const CVForm = () => {
                   type="button"
                   className='upsubtn'
                 >
-                  <Link to="/your-route">
+                  <Link to="https://www.linkedin.com/company/thara-group?trk=feed_main-feed-card_feed-actor-name">
                   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
   <g clip-path="url(#clip0_462_4150)">
     <path d="M21.5945 0.747559H4.13991C2.33244 0.747559 0.867188 2.21281 0.867188 4.02029V21.4748C0.867188 23.2823 2.33244 24.7476 4.13991 24.7476H21.5945C23.4019 24.7476 24.8672 23.2823 24.8672 21.4748V4.02029C24.8672 2.21281 23.4019 0.747559 21.5945 0.747559Z" fill="#0077B5"/>
@@ -129,21 +129,22 @@ const CVForm = () => {
       {/* Success Popup */}
       {showSuccessPopup && (
         <div className="modal fade show" id="successPopup" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style={{ display: 'block' }}>
-          <div className="modal-dialog">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h5 className="modal-title" id="exampleModalLabel">Success</h5>
-                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" onClick={closeSuccessPopup}></button>
-              </div>
-              <div className=" success-popup modal-body">
-                <p className='text-light'>Your application was submitted successfully!</p>
-              </div>
-              <div className="modal-footer">
-                <button type="submit" className="btn upsubtn" data-bs-dismiss="modal" onClick={closeSuccessPopup}>Close</button>
-              </div>
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">Success</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" onClick={closeSuccessPopup}></button>
+            </div>
+            <div className="success-popup modal-body">
+              <p className='text-light'>Your application was submitted successfully!</p>
+            </div>
+            <div className="modal-footer">
+              <button type="submit" className="btn upsubtn" data-bs-dismiss="modal" onClick={closeSuccessPopup}>Close</button>
             </div>
           </div>
         </div>
+      </div>
+      
       )}
     </>
   );

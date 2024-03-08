@@ -5,7 +5,9 @@
     gap: auto;
     padding: 81px 70px;
   }
-  
+  .aligm{
+    display: inline;
+  }
   @media screen and (max-width: 1040px) {
     /* Adjust styles for screens with a maximum width of 768 pixels */
     .listbroder {
