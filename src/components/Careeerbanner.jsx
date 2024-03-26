@@ -103,7 +103,7 @@ display:none;
                     <P>Home / Career</P>
                     <Headingmain><H1>Careers at Thara</H1>
                     <svg xmlns="http://www.w3.org/2000/svg" width="304" height="31" viewBox="0 0 304 31" fill="none">
-  <path d="M0.227761 4.60661C90.2473 -1.83915 269.424 7.91985 302.024 6.03676C306.494 5.7786 80.2473 9.57915 70.0832 29.5973" stroke="white" stroke-width="3"/>
+  <path d="M0.227761 4.60661C90.2473 -1.83915 269.424 7.91985 302.024 6.03676C306.494 5.7786 80.2473 9.57915 70.0832 29.5973" stroke="white" strokeWidth="3"/>
 </svg></Headingmain>
                   
                   <Gheading>

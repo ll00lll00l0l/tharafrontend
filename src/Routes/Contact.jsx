@@ -2,9 +2,9 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom';
 import NavbarWhite from '../components/NavbarWhite';
 import ContactForm from '../components/ContactForm';
-import Ourhq from '../components/Ourhq.js';
-import Footer from '../components/Footer.js';
-import Banner from '../components/Letstalkbanner.js';
+import Ourhq from '../components/Ourhq';
+import Footer from '../components/Footer';
+import Banner from '../components/Letstalkbanner';
 
 const Contact = () => {
   return (

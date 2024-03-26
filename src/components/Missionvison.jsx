@@ -1,5 +1,5 @@
 import React from 'react';
-import './Missionstyle.css';
+import '../styles/Missionstyle.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SVG  from './Allsvgcomp.js'; 
 

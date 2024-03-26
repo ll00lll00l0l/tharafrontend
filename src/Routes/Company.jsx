@@ -1,10 +1,10 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom';
-import  NavbarWhite  from'../components/NavbarWhite.js';
+import  NavbarWhite  from'../components/NavbarWhite';
 import CompanyList from '../components/CompanyList';
-import ConnectUs from '../components/ConnectUs.js';
-import Footer from '../components/Footer.js';
-import Banner from '../components/Bannerabout.js';
+import ConnectUs from '../components/ConnectUs';
+import Footer from '../components/Footer';
+import Banner from '../components/Bannerabout';
 
 
 const About = () => {

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import NavbarWhite from '../components/NavbarWhite';
-import Footer from '../components/Footer.js';
-import '../components/Productdata.css';
-import baseURL from '../components/config';
+import Footer from '../components/Footer';
+import '../styles/Productdata.css';
+import baseURL from '../config/config';
 
 const ProductDetail = () => {
   const [product, setProduct] = useState(null);

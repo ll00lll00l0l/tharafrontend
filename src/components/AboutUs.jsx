@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-import './AboutUs.css';
+import '../styles/AboutUs.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SVG  from './Allsvgcomp.js'; 
 

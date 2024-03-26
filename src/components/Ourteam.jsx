@@ -4,7 +4,7 @@ import Team2 from '../assets/img/ourteam2.jpg';
 import Team3 from '../assets/img/ourteam3.jpg';
 
 import Coma  from './Allsvgcomp.js'; 
-import  './Ourteam.css'; 
+import  '../styles/Ourteam.css'; 
 
 
 function ourteam() {

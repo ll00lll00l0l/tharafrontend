@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import Phone from '../assets/img/phone.png';
 import Email from '../assets/img/email.png';
 import Website from '../assets/img/website.png';
-import './List.css';
-import baseURL from './config';
+import '../styles/List.css';
+import baseURL from '../config/config';
 
 class BrandList extends Component {
   state = {

@@ -4,8 +4,8 @@ import tharalogo from '../assets/img/Group 4.svg';
 import phoneIcon from '../assets/img/phone-vibrate-fill.png';
 import emailIcon from '../assets/img/entypo_email.png';
 import insta from '../assets/img/insta.png';
-// import facebook from '../assets/img/facebook.png';
-// import youtube from '../assets/img/youtube.png';
+import facebook from '../assets/img/facebook.png';
+import youtube from '../assets/img/youtube.png';
   import { Link } from 'react-router-dom';
 
 
@@ -172,9 +172,9 @@ function Footer() {
             <Col>
               <ContentCol>
                 <SocialIcons>
-                  {/* <Link to=""><ContactIcon src={facebook} alt="Facebook" /></Link> */}
+                  <Link to=""><ContactIcon src={facebook} alt="Facebook" /></Link>
                   <Link to="https://www.instagram.com/tharagroupsince1987"><ContactIcon src={insta} alt="Instagram" /></Link>
-                  {/* <Link to=""><ContactIcon src={youtube} alt="YouTube" /></Link> */}
+                  <Link to=""><ContactIcon src={youtube} alt="YouTube" /></Link>
                 </SocialIcons>
               </ContentCol>
             </Col>

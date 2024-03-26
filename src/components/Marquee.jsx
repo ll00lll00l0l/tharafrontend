@@ -7,7 +7,7 @@ import Image3 from '../assets/img/image3.png';
 import Image4 from '../assets/img/image4.png';
 import Image5 from '../assets/img/image5.png';
 import Image6 from '../assets/img/image6.png';
-import './Marqueestyle.css';
+import '../styles/Marqueestyle.css';
 
 const BorderDiv = styled.div`
   padding: 140.214px 70px;

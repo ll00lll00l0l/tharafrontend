@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './ProductList.css';
-import baseURL from './config';
+import '../styles/ProductList.css';
+import baseURL from '../config/config';
 
 
 class ProductList extends Component {

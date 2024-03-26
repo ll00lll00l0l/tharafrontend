@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Aboutyear.css';
+import '../styles/Aboutyear.css';
 import Ourhqphoto from '../assets/img/Ourhq.png';
 
 function Aboutyear() {

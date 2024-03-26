@@ -1,5 +1,5 @@
 import React from 'react';
-import  './Bannerabout.css'; 
+import  '../styles/Bannerabout.css'; 
 import Star  from './Allsvgcomp.js'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';

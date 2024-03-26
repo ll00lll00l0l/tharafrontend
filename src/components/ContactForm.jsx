@@ -1,9 +1,9 @@
 // ContactForm.js
 import React, { useState } from 'react';
-import './Contactform.css';
+import '../styles/Contactform.css';
 import Phone from '../assets/img/phone.png';
 import Email from '../assets/img/email.png';
-import baseURL from './config';
+import baseURL from '../config/config';
 
 
 const ContactForm = () => {
@@ -66,7 +66,7 @@ const ContactForm = () => {
                           <button className="btn-purple" type='submit' >
                         Submit
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 31 31" fill="none" className='arrow'>
-                  <path d="M17.4016 8L24.6932 15.5M24.6932 15.5L17.4016 23M24.6932 15.5L7.19324 15.5" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M17.4016 8L24.6932 15.5M24.6932 15.5L17.4016 23M24.6932 15.5L7.19324 15.5" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeinejoin="round"/>
                 </svg>
               </button>
             </div>
@@ -83,7 +83,7 @@ const ContactForm = () => {
                             style={{ border: 0 }}
                             allowFullScreen=""
                             loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
+                            referrerPolicy="no-referrer-when-downgrade"
                         ></iframe>
                         <div className='address'>
                         <span><img className='' src={Email} alt='img'  />support@thara.co.in</span>
