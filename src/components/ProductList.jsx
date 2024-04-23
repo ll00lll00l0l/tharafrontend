@@ -7,8 +7,8 @@ import baseURL from '../config/config';
 class ProductList extends Component {
   state = {
     products: [],
-    brandFilter: ['allBrands'], // 'allBrands' is set as the default value
-    companyFilter: ['allCompanies'], // 'allCompanies' is set as the default value
+    brandFilter: ['allBrands'], 
+    companyFilter: ['allCompanies'], 
     isListVisible: true,
   };
 
@@ -44,7 +44,7 @@ class ProductList extends Component {
       const updatedBrands = [...prevState.brandFilter];
 
       if (selectedBrand === 'allBrands') {
-        return { brandFilter: ['allBrands'] }; // Select 'All Brands' only
+        return { brandFilter: ['allBrands'] };
       }
 
       const index = updatedBrands.indexOf(selectedBrand);
@@ -66,7 +66,7 @@ class ProductList extends Component {
       const updatedCompanies = [...prevState.companyFilter];
 
       if (selectedCompany === 'allCompanies') {
-        return { companyFilter: ['allCompanies'] }; // Select 'All Companies' only
+        return { companyFilter: ['allCompanies'] }; 
       }
 
       const index = updatedCompanies.indexOf(selectedCompany);

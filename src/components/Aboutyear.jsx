@@ -15,14 +15,12 @@ function Aboutyear() {
     { year: 2023, data: 'Expands into e-commerce logistics with the launch of Tharacart.' }
   ];
 
-  const [activeButton, setActiveButton] = useState(1);
+  const [activeButton, setActiveButton] = useState();
 
-  const activateButton = (buttonId) => {
-    setActiveButton(buttonId);
+  const activateButton = (any) => {
+    setActiveButton(any);
   };
-
   const activeYearData = years.find((year) => year.year === activeButton)?.data;
-
   return (
     <div className='yearbroder'>
       <h3>Our History</h3>
