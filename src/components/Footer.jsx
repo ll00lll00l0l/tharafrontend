@@ -182,7 +182,7 @@ function Footer() {
         </FrameWork>
         <Attribution>
           <p>C© 2023 Thara & Co</p>
-          <p>Created By Nabeel Hassan</p>
+          <p>Designed by Akhil Venthodika</p>
         </Attribution>
       </FooterBody>
     </FooterWrapper>
