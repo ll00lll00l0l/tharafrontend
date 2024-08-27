@@ -44,17 +44,17 @@ const ContactForm = () => {
     };
 
     return (
-        <div  id="letstalk"className='formalignn'>
+        <div  className='formalignn'>
         <div className=" formcontainer mt-5">
             <div className="row  formrow ">
                 <div className=" formcol col-md-6 ">
                    
                     <form  onSubmit={handleContactSubmit}>
-                        <div id="letstalk" className=" mb-3">
+                        <div id="letstalk"  className=" mb-3">
                             <label htmlFor="formName" className="formlabel">Name</label>
                             <input type="text" className="formcontrol" id="formName" placeholder="Enter your name" value={name} onChange={(e) => setName(e.target.value)} />
                         </div>
-                        <div className="mb-3">
+                        <div className="mb-3" >
                             <label htmlFor="formEmail" className="formlabel">Email</label>
                             <input type="email" className="formcontrol" id="formEmail" placeholder="Enter your email" value={email} onChange={(e) => setEmail(e.target.value)} />
                         </div>

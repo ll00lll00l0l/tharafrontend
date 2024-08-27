@@ -98,7 +98,7 @@
     transition: opacity 0.3s ease, height 0.3s ease; /* Add a transition for smooth effect */
   }
   
-@media screen and (max-width:1040px) {
+@media screen and (max-width:1060px) {
     .header{
         padding: 0px 20px;
 
@@ -121,7 +121,7 @@
     }
     .nav-menu.active{
         left:0;
-        align-items: left;
+        position: fixed; 
      
 
     }
@@ -148,7 +148,7 @@
 }
 
     }
-.logo-image{
+/* .logo-image.svg{
    width: 101.383px;
    flex-shrink: 0;
-}
+} */

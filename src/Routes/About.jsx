@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 import Banner from '../components/Bannerabout';
 import Misson1 from '../components/Ourmission1';
 import Ourteam from '../components/Ourteam';
-import Aboutyear from '../components/Aboutyear';
+// import Aboutyear from '../components/Aboutyear';
 
 
 const About = () => {
@@ -17,7 +17,7 @@ const About = () => {
      <Routes>
       </Routes>
       <Ourteam/>
-      <Aboutyear/>
+      {/* <Aboutyear/> */}
       <ConnectUs/>
       <Footer/>
     </div>

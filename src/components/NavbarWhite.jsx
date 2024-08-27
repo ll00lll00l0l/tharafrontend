@@ -1,6 +1,7 @@
 // useNavbar.js
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import {  useLocation } from 'react-router-dom';
+import { HashLink as Link } from "react-router-hash-link";
 import { FaBars, FaTimes } from 'react-icons/fa';
 import logo from '../assets/img/Group 2.svg';
 import '../styles/NavbarWhiteStyles.css';
@@ -21,7 +22,7 @@ const useNavbar = () => {
         <li className={location.pathname === '/' ? 'active' : ' '}>
           <Link to="/">Home</Link>
         </li>
-        <li className={location.pathname.startsWith('/About') ? 'active wnav-menu-dropdown' : ' '}>
+        {/* <li1 className={location.pathname.startsWith('/About') ? 'active wnav-menu-dropdown' : ' '}>
           <Link >About Us</Link>
          
           <ul className="wnav-dropdown"> <div className=''>
@@ -35,9 +36,15 @@ const useNavbar = () => {
               <Link to="/brand">Brands & Collaboration</Link>
             </li></div>
           </ul>
+        </li1> */}
+        <li className={location.pathname === '/about' ? 'active' : ' '}>
+          <Link to="/about">About Us</Link>
         </li>
-        <li className={location.pathname === '/Product' ? 'active' : ' '}>
-          <Link to="/Product">Product</Link>
+        <li className={location.pathname === '/company' ? 'active' : ' '}>
+          <Link to="/company">Our Companies</Link>
+        </li>
+        <li className={location.pathname === '/brand' ? 'active' : ' '}>
+          <Link to="/brand">brands</Link>
         </li>
         <li className={location.pathname === '/Career' ? 'active' : ' '}>
           <Link to="/Career">Career</Link>
@@ -47,7 +54,7 @@ const useNavbar = () => {
         </li>
         </div>
         <li   className={location.pathname === '/' ? 'active' : ' '}>
-          <Link to="/Contact">
+          <Link to="/Contact#letstalk">
             <div className="arrow-container">
               <button className="btn-purple" id="btnToHide">
                 Let’s Talk

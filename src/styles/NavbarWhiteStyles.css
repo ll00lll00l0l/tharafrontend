@@ -123,7 +123,11 @@ gap: 59px;
     
     .wnav-menu.active{
         left:0;
+        position: fixed;
+
+
     }
+  
     #btnToHide {
         display: none;
       }

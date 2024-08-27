@@ -1,5 +1,5 @@
 // config.js
-const baseURL = 'https://tharagroup.akhilv.com';
+const baseURL = 'https://tg.thara.co.in';
 
 export default baseURL;
     

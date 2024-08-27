@@ -22,8 +22,8 @@ const Marquee = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setMarqueePosition((prevPosition) => (prevPosition + 1) % 6);
-    }, 0); // Adjust the interval time as needed
+      setMarqueePosition((prevPosition) => (prevPosition + 0) % 100);
+    }, 1000); 
   
     return () => clearInterval(interval);
   }, []);

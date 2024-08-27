@@ -1,5 +1,5 @@
 .teambroder{
-    padding: 120px 70px;
+    padding: 120px 70px 0 90px;
     @media (max-width: 1040px) {
         padding: 60px 20px;
 

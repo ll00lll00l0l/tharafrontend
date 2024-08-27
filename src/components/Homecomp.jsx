@@ -155,7 +155,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 160%; /* 28.8px */
 letter-spacing: 0.5px;
-text-wrap:wrap;
+word-wrap:wrap;
   }
 `;
 

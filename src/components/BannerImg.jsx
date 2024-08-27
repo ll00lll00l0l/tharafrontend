@@ -1,7 +1,6 @@
 import React from 'react'
 import "../styles/BannerImgStyle.css";
-import { Link } from "react-router-dom";
-
+import { HashLink as Link } from "react-router-hash-link";
 import banner from '../assets/img/banner.png';
 import Ellipse from '../assets/img/Ellipse 2.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -31,7 +30,7 @@ function BannerImg() {
         
         <div className="arrow-container">
         <Link to='/Contact#letstalk'>
-        <button className="btn-white">Let’s Talk
+        <button className="btn-white border-0">Let’s Talk
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="30"
@@ -51,8 +50,6 @@ function BannerImg() {
       </button>
       </Link >
     </div>
-       
-     
       </div>
       </div>
       
@@ -62,8 +59,7 @@ function BannerImg() {
           <div className='banner-image-container'>
             <img className='banner-image img-fluid' src={banner} alt='img' />
             <img className='Ellipse-image img-fluid ' src={Ellipse} alt='img' />
-            <div className='banner-shadow'></div>
-          
+            <div className='banner-shadow'></div>     
     </div>
     </div>
     </div>
