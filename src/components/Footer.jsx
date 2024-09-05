@@ -58,7 +58,7 @@ const Col = styled.div`
     font-weight: 400;
     line-height: 160%; /* 28.8px */
     letter-spacing: 0.5px;
-    text-wrap: balance;
+    word-wrap: balance;
     font-family: Manrope;
   }
   @media (max-width: 768px) {
@@ -81,7 +81,7 @@ const QuickLinks = styled.div`
     display: block;
     margin-bottom: 8px;
     font-size: 16px;
-    text-wrap: balance;
+    word-wrap: balance;
 
   }
 `;
