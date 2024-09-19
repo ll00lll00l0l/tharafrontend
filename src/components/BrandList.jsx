@@ -68,6 +68,7 @@ class BrandList extends Component {
     const { brands, items, clickedBrandId } = this.state;
 
     return (
+      <>
       <div className='listbroder'>
         <div className='aligm'>
           {brands.map((brand) => {
@@ -174,7 +175,9 @@ class BrandList extends Component {
           })}
         </div>
       </div>
+    </>
     );
+
   }
 }
 

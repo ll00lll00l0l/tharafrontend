@@ -10,7 +10,7 @@ import Homecomp from '../components/Homecomp';
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Navbar1/>
       <BannerImg/>
       <AboutUs/> 
@@ -19,7 +19,7 @@ const Home = () => {
       <Aboutcomp/>
       <ConnectUs/>
       <Footer/>
-    </div>
+    </>
   )
 };
 
