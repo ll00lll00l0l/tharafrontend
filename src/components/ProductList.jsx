@@ -16,26 +16,26 @@ class ProductList extends Component {
     this.getData();
   }
 
-  // getData = async () => {
-  //   try {
-  //     const productResponse = await fetch(`${baseURL}/api/item/`);
+  getData = async () => {
+    try {
+      const productResponse = await fetch(`${baseURL}/api/item/`);
 
-  //     if (!productResponse.ok) {
-  //       throw new Error(`HTTP error! Status: ${productResponse.status}`);
-  //     }
+      if (!productResponse.ok) {
+        throw new Error(`HTTP error! Status: ${productResponse.status}`);
+      }
 
-  //     const contentType = productResponse.headers.get('content-type');
+      const contentType = productResponse.headers.get('content-type');
 
-  //     if (!contentType || !contentType.includes('application/json')) {
-  //       throw new Error('Invalid content type. Expected JSON.');
-  //     }
+      if (!contentType || !contentType.includes('application/json')) {
+        throw new Error('Invalid content type. Expected JSON.');
+      }
 
-  //     const productData = await productResponse.json();
-  //     this.setState({ products: productData.results });
-  //   } catch (error) {
-  //     console.error('Error fetching product data:', error);
-  //   }
-  // };
+      const productData = await productResponse.json();
+      this.setState({ products: productData.results });
+    } catch (error) {
+      console.error('Error fetching product data:', error);
+    }
+  };
 
   handleBrandFilterChange = (event) => {
     const selectedBrand = event.target.value;
