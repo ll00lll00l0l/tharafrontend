@@ -44,7 +44,7 @@ const useNavbar = () => {
           <Link to="/company">Our Companies</Link>
         </li>
         <li className={location.pathname === '/brand' ? 'active' : ' '}>
-          <Link to="/brand">brands</Link>
+          <Link to="/brand">Brands</Link>
         </li>
         <li className={location.pathname === '/Career' ? 'active' : ' '}>
           <Link to="/Career">Career</Link>
@@ -68,7 +68,7 @@ const useNavbar = () => {
       </ol>
       <div className="whamburger" onClick={handleClick}>
         {click ? (
-          <FaTimes size={20} style={{ color: 'black' }} />
+          <FaTimes size={20} style={{ color: 'black', position:"fixed", top:"40px", right:"20px" }} />
         ) : (
           <FaBars size={20} style={{ color: 'black' }} />
         )}

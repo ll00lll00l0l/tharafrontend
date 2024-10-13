@@ -58,7 +58,7 @@ const useNavbar = () => {
       </ol>
       <div className="hamburger" onClick={handleClick}>
         {click ? (
-          <FaTimes  size={20} style={{ color: "white" }} />
+          <FaTimes  size={20} style={{ color: "white", position:"fixed", top:"40px", right:"20px"}} />
         ) : (
           <FaBars size={20} style={{ color: "white" }} />
         )}
