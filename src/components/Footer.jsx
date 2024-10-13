@@ -6,7 +6,7 @@ import emailIcon from '../assets/img/entypo_email.png';
 import insta from '../assets/img/insta.png';
 import facebook from '../assets/img/facebook.png';
 import youtube from '../assets/img/youtube.png';
-  import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const FooterWrapper = styled.footer`
@@ -27,12 +27,15 @@ const FooterBody = styled.div`
   gap: 26px;
 
   @media (max-width: 1040px) {
-    padding: 30px 0 0px 35px;
+    padding: 30px 0 0px 10px;
   }
 `;
 
 const FrameWork = styled.div`
   padding-bottom: 70px;
+  @media (max-width: 1040px) {
+    padding-bottom:20px;
+  }
 `;
 
 const LogoImage = styled.img`
@@ -69,6 +72,10 @@ const Col = styled.div`
 `;
 
 const QuickLinks = styled.div`
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   
   h5 {
     margin-bottom: 24px;
@@ -82,11 +89,14 @@ const QuickLinks = styled.div`
     margin-bottom: 8px;
     font-size: 16px;
     word-wrap: balance;
-
   }
 `;
 
 const ContactInfo = styled.div`
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   h5 {
     margin-bottom: 24px;
   }
@@ -118,6 +128,7 @@ const ContentCol = styled.div`
 const SocialIcons = styled.div`
   display: flex;
   gap: 10px;
+  flex-wrap: nowrap;
 `;
 
 const Attribution = styled.div`
@@ -126,10 +137,10 @@ const Attribution = styled.div`
   p {
     color: #B57BE1;
     font-family: Manrope;
-    font-size: clamp(0.75rem, 1.3vw, 1rem); /* Use clamp for responsive font-size */
+    font-size: clamp(0.75rem, 1.3vw, 1rem); 
     font-style: normal;
     font-weight: 400;
-    line-height: 1.2; /* Use unitless value for line-height for better responsiveness */
+    line-height: 1.2; 
     letter-spacing: 0.5px;
     white-space: nowrap;
   }
@@ -144,7 +155,7 @@ function Footer() {
           <Row>
             <Col>
               <LogoImage src={tharalogo} alt="Thara Logo" />
-              <p>SREE COMPLEX, CALICUT ROAD,PERINTHALMANNA,Malappuram, Kerala, 679322</p>
+              <p>SREE COMPLEX, CALICUT ROAD,PERINTHALMANNA,MALAPPURAM, KERALA, 679322</p>
             </Col>
             <Col>
               <QuickLinks>

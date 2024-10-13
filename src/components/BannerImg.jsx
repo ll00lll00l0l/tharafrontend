@@ -1,8 +1,8 @@
 import React from 'react'
 import "../styles/BannerImgStyle.css";
 import { HashLink as Link } from "react-router-hash-link";
-import banner from '../assets/img/banner.png';
-import Ellipse from '../assets/img/Ellipse 2.png';
+import banner from '../assets/img/banner.webp';
+import Ellipse from '../assets/img/Ellipse 2.webp';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 

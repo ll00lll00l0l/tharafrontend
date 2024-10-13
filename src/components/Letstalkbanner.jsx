@@ -1,5 +1,5 @@
 import React from 'react';
-import Bann from '../assets/img/letsbanner.png';
+import Bann from '../assets/img/letsbanner.webp';
 import styled from 'styled-components';
 
 const BannerContainer = styled.div`

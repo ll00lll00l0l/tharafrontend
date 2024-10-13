@@ -1,5 +1,5 @@
 import React from 'react';
-import Bann from '../assets/img/carrerbanner.png';  
+import Bann from '../assets/img/carrerbanner.webp';  
 import styled from 'styled-components';
 
 
@@ -73,7 +73,7 @@ font-weight: 400;
 width: 432.469px;
 line-height: 160%; /* 51.2px */
 margin-bottom:17px;
-text-wrap: balance;
+white-space: balance;
 
 @media (max-width: 768px) {
   display:none; 
