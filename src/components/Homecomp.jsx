@@ -9,7 +9,7 @@ const ResponsiveHeading = styled.h1`
   font-size: clamp(30px, 3vw, 50px);
   font-style: normal;
   font-weight: 600;
-  line-height: 38.4px; /* 76.8% */
+  line-height: 38.4px;
   letter-spacing: 0.5px;
 `;
 

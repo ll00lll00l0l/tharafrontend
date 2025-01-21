@@ -1,121 +1,118 @@
 .prodlistbrod {
-    display: flex;
-    padding: 90px 70px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 50px;
-  
+  display: flex;
+  padding: 90px 70px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+
   @media (max-width: 1040px) {
     padding: 60px 20px;
   }
 }
-  .prodlistoutdiv {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: auto;
-  }
-  
+.prodlistoutdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: auto;
+}
+
+.prodfilter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+@media screen and (max-width: 1040px) {
   .prodfilter {
-    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
-  
-         
-  }
-    @media screen and (max-width:1040px) {
-      .prodfilter{
-          flex-direction: column;
-          justify-content:none;
-          align-items: center;
-          width: 40%;
-          height: 150%;
-          position:absolute;
-          top: 30%;
-          left: -100%;
-          background: rgba(255, 255, 255, 0.5); 
-          z-index: 3;
-          backdrop-filter: blur(40px);
-          opacity: 1;
-          transition: 0.3s  ;
-      }
-    }
-
-  .prodfilter p {
-    color: #151515;
-    font-family: Manrope;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 160%;
-    letter-spacing: 0.5px;
-  }
-  
-  .prodcol {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-  }
-  
-  .prodcol span {
-    color: #151515;
-    font-family: Manrope;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 160%;
-    letter-spacing: 0.5px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-  }
-  
-  .prodcol div {
-    display: flex;
+    justify-content: none;
     align-items: center;
-    gap: 16px;
-    color: #151515;
-    font-family: Manrope;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 160%;
-    letter-spacing: 0.5px;
+    width: 40%;
+    height: 150%;
+    position: absolute;
+    top: 30%;
+    left: -100%;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 3;
+    backdrop-filter: blur(40px);
+    opacity: 1;
+    transition: 0.3s;
   }
+}
 
-  .prodcol input[type="checkbox"] {
-    display: none;
-  }
-  
-  .prodcol label {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .prodcol label:before {
-    content: '';
-    display: inline-block;
-    width: 13.2px;
-    height: 13.2px;
-    margin-right: 16px; 
-    border: 1.2px solid #757575;
-    background-color: #fff;
-    border-radius: 3.6px;
-    box-sizing: border-box;
-  }
-  
-  .prodcol input[type="checkbox"]:checked + label:before {
-    border-radius: 3.6px;
-    border: 1.2px solid #5B19A8;
-    background: #5B19A8;
+.prodfilter p {
+  color: #151515;
+  font-family: Manrope;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 160%;
+  letter-spacing: 0.5px;
+}
+
+.prodcol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.prodcol span {
+  color: #151515;
+  font-family: Manrope;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 160%;
+  letter-spacing: 0.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.prodcol div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #151515;
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.5px;
+}
+
+.prodcol input[type="checkbox"] {
+  display: none;
+}
+
+.prodcol label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.prodcol label:before {
+  content: "";
+  display: inline-block;
+  padding: 5.2px;
+  margin-right: 16px;
+  border: 1.2px solid #757575;
+  background-color: #fff;
+  border-radius: 3.6px;
+  box-sizing: border-box;
+}
+
+.prodcol input[type="checkbox"]:checked + label:before {
+  border-radius: 3.6px;
+  border: 1.2px solid #5b19a8;
+  background: #5b19a8;
 }
 .listprobrod {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 35px;
-  margin: 10px clamp(20px,5vw,8.3vw);
+  margin: 10px clamp(20px, 5vw, 8.3vw);
 }
 
 .probrod {
@@ -128,16 +125,14 @@
 .probrod div {
   display: flex;
   flex-direction: column;
-  flex: 1; /* This will make flex items grow and shrink */
+  flex: 1;
   max-width: 300px;
   gap: 16px;
-
- 
 }
 
 .probrod div img {
   width: 300px;
-  height: auto;
+  height: 300px;
   border-radius: 20px;
 }
 
@@ -153,63 +148,62 @@
   text-align: center;
 }
 
-.datause ul li{
-  color: #1D1D1D;
-font-family: Manrope;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 160%; /* 28.8px */
-letter-spacing: 0.5px;
+.datause ul li {
+  color: #1d1d1d;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.5px;
 }
-.datause h3{
-  color: #1D1D1D;
-font-family: Manrope;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 100%; /* 18px */
-letter-spacing: 0.5px;
+.datause h3 {
+  color: #1d1d1d;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.5px;
 }
-.datause p{
-  color: #1D1D1D;
-font-family: Manrope;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 160%; /* 28.8px */
-letter-spacing: 0.5px;  
+.datause p {
+  color: #1d1d1d;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.5px;
 }
-.Similarprod{
+.Similarprod {
   display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 32px;
- b{
-  color: #151515;
-font-family: Manrope;
-font-size: 32px;
-font-style: normal;
-font-weight: 400;
-line-height: 160%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  b {
+    color: #151515;
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+  }
 }
-}
-.Similarproddata{
+.Similarproddata {
   display: flex;
   flex-direction: column;
   align-items: center;
-gap: 35px;
-overflow-x: scroll;
+  gap: 35px;
+  overflow-x: scroll;
 }
 .Similarproddata::-webkit-scrollbar {
-  display: none; /* Hide the scrollbar */
-} 
+  display: none; 
+}
 .Similarproddata div {
   display: flex;
   flex-direction: column;
-  flex: 1; 
+  flex: 1;
   max-width: 250px;
- 
 }
 .Similarproddata div a {
   font-family: Manrope;

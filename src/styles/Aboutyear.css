@@ -1,21 +1,18 @@
 .yearbroder {
   padding: 90px 70px;
-
 }
 @media (max-width: 1040px) {
-  .yearbroder{
-    padding: 30px 20px; 
-
+  .yearbroder {
+    padding: 30px 20px;
   }
-  
 }
 .yearbroder h3 {
   color: #151515;
   font-family: Sora;
-  font-size: clamp(30px,3vw,50px);
+  font-size: clamp(30px, 3vw, 50px);
   font-style: normal;
   font-weight: 600;
-  line-height: 38.4px; /* 76.8% */
+  line-height: 38.4px;
   letter-spacing: 0.5px;
   padding-bottom: 60px;
 }
@@ -26,87 +23,85 @@
   overflow-x: scroll;
   gap: 45px;
   position: relative;
-  margin-top: 30px; 
+  margin-top: 30px;
 }
 .button-list::-webkit-scrollbar {
-  display: none; 
-} 
+  display: none;
+}
 
 .button-list button {
-  position: relative; /* Add this line */
+  position: relative;
   display: flex;
   padding: 10px 30px;
   justify-content: center;
   align-items: center;
   gap: 10px;
   border-radius: 54px;
-  background: #E6E6E6;
+  background: #e6e6e6;
   position: relative;
   border: 0px;
-  color: #44156A;
+  color: #44156a;
   font-family: Manrope;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 160%; /* 28.8px */
+  line-height: 160%;
   letter-spacing: 0.5px;
-  max-width: 200px; /* Adjust the max-width as needed */
-  text-align: center; /* Optional: Centers the text within the button */
+  max-width: 200px;
+  text-align: center;
 }
 
 .button-list button::before {
-  content: '';
+  content: "";
   position: absolute;
-  left: -45px; /* Half of the gap */
+  left: -45px;
   top: 50%;
   transform: translateY(-50%);
   height: 2px;
   width: 45px;
-  background: #E6E6E6;
+  background: #e6e6e6;
 }
 
-.svg-icon{
+.svg-icon {
   margin-top: 10px;
   margin-left: 40px;
 }
 
 .button-list button.active {
-  background-color: #44156A;
+  background-color: #44156a;
   color: white;
 }
-.yearrow{
+.yearrow {
   display: flex;
-  flex-wrap:wrap;
-padding-top: 60px  ;
-gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  gap: 20px;
 }
 .yearrow img {
   border-radius: 20px;
-  min-width:200px;
-border: 1px solid #AEAEAE;
-
+  min-width: 200px;
+  border: 1px solid #aeaeae;
 }
-.yearcol{
+.yearcol {
   flex: 1;
   flex-shrink: 1;
 }
-.yearcol h3{
+.yearcol h3 {
   color: #151515;
   font-family: Manrope;
-  font-size: clamp(18px,3vw,32px);
+  font-size: clamp(18px, 3vw, 32px);
   font-style: normal;
   white-space: nowrap;
   font-weight: 400;
-  padding-bottom:20px ;
+  padding-bottom: 20px;
 }
-.yearcol p{
+.yearcol p {
   color: #151515;
-font-family: Manrope;
-font-size: clamp(13px,2vw,18px);
-font-style: normal;
-font-weight: 400;
-line-height: 160%; /* 28.8px */
-letter-spacing: 0.5px;
-text-wrap: balance;
-
+  font-family: Manrope;
+  font-size: clamp(13px, 2vw, 18px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.5px;
+  text-wrap: balance;
 }

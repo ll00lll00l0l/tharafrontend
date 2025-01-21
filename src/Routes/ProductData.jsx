@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
-import NavbarWhite from '../components/NavbarWhite';
-import Footer from '../components/Footer';
-import '../styles/Productdata.css';
-import baseURL from '../config/config';
+import React, { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
+import NavbarWhite from "../components/NavbarWhite";
+import Footer from "../components/Footer";
+import "../styles/Productdata.css";
+import baseURL from "../config/config";
 
 const ProductDetail = () => {
   const [product, setProduct] = useState(null);
@@ -19,16 +19,16 @@ const ProductDetail = () => {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
 
-        const contentType = response.headers.get('content-type');
+        const contentType = response.headers.get("content-type");
 
-        if (!contentType || !contentType.includes('application/json')) {
-          throw new Error('Invalid content type. Expected JSON.');
+        if (!contentType || !contentType.includes("application/json")) {
+          throw new Error("Invalid content type. Expected JSON.");
         }
 
         const productData = await response.json();
         setProduct(productData);
       } catch (error) {
-        console.error('Error fetching product data:', error);
+        console.error("Error fetching product data:", error);
       }
     };
 
@@ -43,33 +43,36 @@ const ProductDetail = () => {
         throw new Error(`HTTP error! Status: ${itemResponse.status}`);
       }
 
-      const contentType = itemResponse.headers.get('content-type');
-      if (!contentType || !contentType.includes('application/json')) {
-        throw new Error('Invalid content type. Expected JSON.');
+      const contentType = itemResponse.headers.get("content-type");
+      if (!contentType || !contentType.includes("application/json")) {
+        throw new Error("Invalid content type. Expected JSON.");
       }
 
       const itemData = await itemResponse.json();
       setItems(itemData.results);
     } catch (error) {
-      console.error('Error fetching item data:', error);
+      console.error("Error fetching item data:", error);
     }
   };
 
   useEffect(() => {
     getItemData();
-  }, []); // Call getItemData once when the component mounts
+  }, []);
 
   const newBaseURL = `${baseURL}`;
-  const imagePathWithoutBaseURL = product?.image?.replace('https://0.0.0.0:9090', newBaseURL);
+  const imagePathWithoutBaseURL = product?.image?.replace(
+    "https://0.0.0.0:9090",
+    newBaseURL
+  );
 
   return (
     <div>
       <NavbarWhite />
 
       {product && (
-        <div className='rowaligmm row'>
+        <div className="rowaligmm row">
           {product.image && (
-            <div className='divimgdata col-md-6'>
+            <div className="divimgdata col-md-6">
               <img
                 src={imagePathWithoutBaseURL}
                 alt={product.name}
@@ -77,26 +80,30 @@ const ProductDetail = () => {
               />
             </div>
           )}
-          <div className='proddatacol col-md-6'>
+          <div className="proddatacol col-md-6">
             <div>
               <h6>Home / Products</h6>
               <h1>{product.name}</h1>
-              <span className='spandata'>
-                <p><b>Brand</b> {product.brand}</p>
-                <p><b>Sold by</b> {product.company}</p>
+              <span className="spandata">
+                <p>
+                  <b>Brand</b> {product.brand}
+                </p>
+                <p>
+                  <b>Sold by</b> {product.company}
+                </p>
               </span>
             </div>
-            <div className='datause'>
+            <div className="datause">
               <ul>
                 {product.uses.split(/\r?\n/).map((use, index) => (
                   <React.Fragment key={index}>
-                    {index >1}
+                    {index > 1}
                     <li>{use}</li>
                   </React.Fragment>
                 ))}
               </ul>
             </div>
-            <div className='datause'>
+            <div className="datause">
               <h3>Ingredients:</h3>
               <p>{product.Ingredients}</p>
             </div>
@@ -127,24 +134,31 @@ const ProductDetail = () => {
             </div>
           </div>
           <div>
-            <div className='Similarprod'>
+            <div className="Similarprod">
               <b>View Similar Products</b>
               {items
                 .filter((item) => item.brand === product.brand)
                 .map((filteredItem) => {
-                  const filteredItemWithoutBaseURL = filteredItem?.image?.replace('https://0.0.0.0:9090', newBaseURL);
+                  const filteredItemWithoutBaseURL =
+                    filteredItem?.image?.replace(
+                      "https://0.0.0.0:9090",
+                      newBaseURL
+                    );
                   return (
-                    <div className='Similarproddata'>
-                    <div key={filteredItem.id} >
-                      {filteredItem.image && (
-                        <img
-                          src={filteredItemWithoutBaseURL}
-                          alt={filteredItem.name}
-                          style={{ width: '250px', height: '100%' }}
-                        />
-                      )}
-                      <Link to={`/product/${filteredItem.id}`}>{filteredItem.name}</Link>
-                    </div></div>
+                    <div className="Similarproddata">
+                      <div key={filteredItem.id}>
+                        {filteredItem.image && (
+                          <img
+                            src={filteredItemWithoutBaseURL}
+                            alt={filteredItem.name}
+                            style={{ width: "250px", height: "100%" }}
+                          />
+                        )}
+                        <Link to={`/product/${filteredItem.id}`}>
+                          {filteredItem.name}
+                        </Link>
+                      </div>
+                    </div>
                   );
                 })}
             </div>

@@ -1,19 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-import Image1 from '../assets/img/image1.png';
-import Image2 from '../assets/img/image2.png';
-import Image3 from '../assets/img/image3.png';
-import Image4 from '../assets/img/image4.png';
-import Image5 from '../assets/img/image5.png';
-import Image6 from '../assets/img/image6.png';
-import '../styles/Marqueestyle.css';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+import Image1 from "../assets/img/image1.png";
+import Image2 from "../assets/img/image2.png";
+import Image3 from "../assets/img/image3.png";
+import Image4 from "../assets/img/image4.png";
+import Image5 from "../assets/img/image5.png";
+import Image6 from "../assets/img/image6.png";
+import "../styles/Marqueestyle.css";
 
 const BorderDiv = styled.div`
   padding: 140.214px 70px;
 
   @media (max-width: 768px) {
-    padding: 70px 20px; 
+    padding: 70px 20px;
   }
 `;
 
@@ -23,21 +23,23 @@ const Marquee = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setMarqueePosition((prevPosition) => (prevPosition + 0) % 100);
-    }, 1000); 
-  
+    }, 1000);
+
     return () => clearInterval(interval);
   }, []);
 
   return (
     <BorderDiv>
-      <div className='home_brand_collab'>
+      <div className="home_brand_collab">
         <span>Our Brands & Collaborations</span>
         <div className=" row flex-wrap-reverse ">
           <div className="col-md-6">
-           <div className='marqgridcol1' > We as a group, sell more than <b>20+ products across India.</b> 
-            Our most famous products are Indomie Noodles,
-            ZPC Creme Fudge, Edhwi, and many more.
-            Explore our catalogue.</div>
+            <div className="marqgridcol1">
+              {" "}
+              We as a group, sell more than <b>20+ products across India.</b>
+              Our most famous products are Indomie Noodles, ZPC Creme Fudge,
+              Edhwi, and many more. Explore our catalogue.
+            </div>
             <div className="arrow-container">
               <Link to="/brand">
                 <button className="btn-white">
@@ -62,9 +64,12 @@ const Marquee = () => {
               </Link>
             </div>
           </div>
-          <div className='col-md-6'>
-            <div className='marquee'>
-              <div className="track" style={{ transform: `translateX(-${marqueePosition * 100}%)` }}>
+          <div className="col-md-6">
+            <div className="marquee">
+              <div
+                className="track"
+                style={{ transform: `translateX(-${marqueePosition * 100}%)` }}
+              >
                 <img src={Image1} alt="" />
                 <img src={Image2} alt="" />
                 <img src={Image3} alt="" />

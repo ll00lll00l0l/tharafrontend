@@ -1,5 +1,5 @@
 // config.js
-const baseURL = 'https://tg.thara.co.in';
+const baseURL = process.env.REACT_APP_API_URL;
 
 export default baseURL;
     

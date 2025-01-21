@@ -1,160 +1,147 @@
-@import url('https://fonts.googleapis.com/css?family=Sora:100,200,300,regular,500,600,700,800');
+@import url("https://fonts.googleapis.com/css?family=Sora:100,200,300,regular,500,600,700,800");
 
-
-.contain{
+.contain {
   display: flex;
   flex-direction: column;
 
   padding: 81px 0px 90px 70px;
-} 
+}
 @media (max-width: 1040px) {
   .contain {
-    
     padding: 10px 20px;
   }
-} 
-.flex-item1{
+}
+.flex-item1 {
   max-width: 619px;
-  
 }
 
-  .grid-item1 {
-    display: flex;
-    gap: 36px 41px;
-    flex-wrap: wrap;
-  }
-  .flexboxxthree{
-    flex-wrap: wrap;
-    flex-shrink: 1;
-  }
-  .grid-child {
-    padding: 30px 30px ;
-    width:289px;
-    flex-grow:1 ;
-    border-radius: 20px;
-    border: 1px solid #AEAEAE;
-    height: 253px;
-    color: #fff;
-    background: radial-gradient(circle at 0% 0%, #450079 50%, transparent 0%);
-    background-position: 100% 50%;
-    background-size: 400% 400%;
-    transition: background 800ms ease-in-out;
-  }
-  .grid-child:hover {
-    background-position: 0% 0%;
-    color: #fff; /* You can keep this line if you want to change the text color on hover */
-
-   }
-  .grid-child span{
-    color: #1B1B1B;
-    font-family: Manrope;
-    font-size: clamp(40px,3vw,48px);
-    font-style: normal;
-    font-weight: 700;
-    line-height: 123%; 
-    letter-spacing: -1.2px;
-    text-transform: capitalize;
-
-  }
-  .grid-child:hover span ,
-  .grid-child:hover p{
-    color: #FFF;
-    transition: color 0.3s;
-
-  }
-  .grid-child:hover svg circle{ 
-    fill: #261549;
-    transition: fill 0.3s;
-
-  }
-  .grid-child:hover svg  path {
-    stroke: #FFF; /* Change this to your desired hover color */
-   
-  }
-  .image-container {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-  }
-  
-  .svg-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .grid-child p{
-    color: #2F2F2F;
-    font-family: Manrope;
-    font-size: clamp(18px,2.5vw,24px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 123%; /* 29.52px */
-    text-transform: capitalize;
-    white-space: nowrap;
-  }
-  .grid-item2 {
-    display: flex;
-    flex-direction: column;
-    padding-top:3rem ;
-    justify-content: center;
-
+.grid-item1 {
+  display: flex;
+  gap: 36px 41px;
+  flex-wrap: wrap;
 }
-  .grid-item2 span{
-    color: #151515;
-    font-size: clamp(25px,3vw,50px);
-    font-family: Sora;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    font-style: normal;
-    width: 70%;
-    padding-bottom: 2vw;
-    text-wrap: wrap;
-
-  }
-  .grid-item2 p{
-    color: #151515;
-    font-size: clamp(15px,3vw,18px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%; 
-    letter-spacing: 0.5px;
-    font-family: Manrope;
-    text-wrap: balance;
-    padding-bottom: 4vw;
-
-
-  }
-  .grid-child2{
-    padding: 30px 30px ;
-    border-radius: 20px;
-    border: 1px solid #AEAEAE;
-    width: clamp(619px,20vw,200px);
-    height: 253px;
-    color: #fff;
-    background: radial-gradient(circle at 0% 0%, #450079 50%, transparent 0%);
-    background-position: 100% 50%;
-    background-size: 400% 400%;
-    transition: background 800ms ease-in-out;
+.flexboxxthree {
+  flex-wrap: wrap;
+  flex-shrink: 1;
 }
-
-
-.grid-child2:hover {
-  background-position: 0;
-  color: #FFF;  
+.grid-child {
+  padding: 30px 30px;
+  width: 289px;
+  flex-grow: 1;
+  border-radius: 20px;
+  border: 1px solid #aeaeae;
+  height: 253px;
+  color: #fff;
+  background: radial-gradient(circle at 0% 0%, #450079 50%, transparent 0%);
+  background-position: 100% 50%;
+  background-size: 400% 400%;
+  transition: background 800ms ease-in-out;
 }
-
-.grid-child2 span{
-  color: #1B1B1B;
+.grid-child:hover {
+  background-position: 0% 0%;
+  color: #fff;
+}
+.grid-child span {
+  color: #1b1b1b;
   font-family: Manrope;
-  font-size: clamp(40px,3vw,48px);
+  font-size: clamp(40px, 3vw, 48px);
   font-style: normal;
   font-weight: 700;
-  line-height: 123%; 
+  line-height: 123%;
   letter-spacing: -1.2px;
   text-transform: capitalize;
 }
-.textcontent{
+.grid-child:hover span,
+.grid-child:hover p {
+  color: #fff;
+  transition: color 0.3s;
+}
+.grid-child:hover svg circle {
+  fill: #261549;
+  transition: fill 0.3s;
+}
+.grid-child:hover svg path {
+  stroke: #fff;
+}
+.image-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.svg-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.grid-child p {
+  color: #2f2f2f;
+  font-family: Manrope;
+  font-size: clamp(18px, 2.5vw, 24px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 123%;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+.grid-item2 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  justify-content: center;
+}
+.grid-item2 span {
+  color: #151515;
+  font-size: clamp(25px, 3vw, 50px);
+  font-family: Sora;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-style: normal;
+  width: 70%;
+  padding-bottom: 2vw;
+  text-wrap: wrap;
+}
+.grid-item2 p {
+  color: #151515;
+  font-size: clamp(15px, 3vw, 18px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.5px;
+  font-family: Manrope;
+  text-wrap: balance;
+  padding-bottom: 4vw;
+}
+.grid-child2 {
+  padding: 30px 30px;
+  border-radius: 20px;
+  border: 1px solid #aeaeae;
+  width: clamp(619px, 20vw, 200px);
+  height: 253px;
+  color: #fff;
+  background: radial-gradient(circle at 0% 0%, #450079 50%, transparent 0%);
+  background-position: 100% 50%;
+  background-size: 400% 400%;
+  transition: background 800ms ease-in-out;
+}
+
+.grid-child2:hover {
+  background-position: 0;
+  color: #fff;
+}
+
+.grid-child2 span {
+  color: #1b1b1b;
+  font-family: Manrope;
+  font-size: clamp(40px, 3vw, 48px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 123%;
+  letter-spacing: -1.2px;
+  text-transform: capitalize;
+}
+.textcontent {
   padding-top: 30px;
 }
 /* .textcontent span{
@@ -167,35 +154,30 @@ line-height: 123%;
 letter-spacing: -1.2px;
 text-transform: capitalize;
 } */
-.grid-child2:hover span ,
-.grid-child2:hover p{
-color: #FFF;
-transition: color 0.3s;
-
+.grid-child2:hover span,
+.grid-child2:hover p {
+  color: #fff;
+  transition: color 0.3s;
 }
-.grid-child2:hover svg circle{ 
-fill: #261549;
-transition: fill 0.3s;
-
+.grid-child2:hover svg circle {
+  fill: #261549;
+  transition: fill 0.3s;
 }
-.grid-child2:hover svg  path {
-stroke: #FFF; /* Change this to your desired hover color */
+.grid-child2:hover svg path {
+  stroke: #fff;
 }
-  
 
-.grid-child2 p{
-  color: #2F2F2F;
+.grid-child2 p {
+  color: #2f2f2f;
   font-family: Manrope;
-  font-size: clamp(18px,2.5vw,24px);
+  font-size: clamp(18px, 2.5vw, 24px);
   font-style: normal;
   font-weight: 400;
-  line-height: 123%; /* 29.52px */
+  line-height: 123%;
   text-transform: capitalize;
 }
-  .Ellipse-img{
-      height: 59.33px;
-      flex-shrink: 0;
-      width: 59.33px;
-  }
-
- 
+.Ellipse-img {
+  height: 59.33px;
+  flex-shrink: 0;
+  width: 59.33px;
+}

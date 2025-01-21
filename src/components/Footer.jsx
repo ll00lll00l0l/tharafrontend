@@ -59,7 +59,7 @@ const Col = styled.div`
     font-size: clamp(15px,2.5vw,18px);
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; /* 28.8px */
+    line-height: 160%;
     letter-spacing: 0.5px;
     white-space: balance;
     font-family: Manrope;

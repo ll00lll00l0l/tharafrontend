@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import Logo   from './Allsvgcomp.js';
+import Logo from "./Allsvgcomp.js";
 
 import "../styles/NavbarStyles.css";
 
@@ -58,7 +58,15 @@ const useNavbar = () => {
       </ol>
       <div className="hamburger" onClick={handleClick}>
         {click ? (
-          <FaTimes  size={20} style={{ color: "white", position:"fixed", top:"40px", right:"20px"}} />
+          <FaTimes
+            size={20}
+            style={{
+              color: "white",
+              position: "fixed",
+              top: "40px",
+              right: "20px",
+            }}
+          />
         ) : (
           <FaBars size={20} style={{ color: "white" }} />
         )}

@@ -36,7 +36,7 @@ p {
   font-weight: 400;
   line-height: 160%;
   letter-spacing: 0.5px;
-  text-wrap:wrap;
+  white-space:wrap;
 }
 
 @media screen and (max-width: 768px) {

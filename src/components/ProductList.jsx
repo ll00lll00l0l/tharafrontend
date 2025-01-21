@@ -1,41 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/ProductList.css';
-import baseURL from '../config/config';
-
-
+import { product } from './../common/data.js'; 
 class ProductList extends Component {
   state = {
-    products: [],
-    brandFilter: ['allBrands'], 
-    companyFilter: ['allCompanies'], 
-    isListVisible: true,
+    brandFilter: ['allBrands'],
+    companyFilter: ['allCompanies'],
   };
-
-  componentDidMount() {
-    this.getData();
-  }
-
-  // getData = async () => {
-  //   try {
-  //     const productResponse = await fetch(`${baseURL}/api/item/`);
-
-  //     if (!productResponse.ok) {
-  //       throw new Error(`HTTP error! Status: ${productResponse.status}`);
-  //     }
-
-  //     const contentType = productResponse.headers.get('content-type');
-
-  //     if (!contentType || !contentType.includes('application/json')) {
-  //       throw new Error('Invalid content type. Expected JSON.');
-  //     }
-
-  //     const productData = await productResponse.json();
-  //     this.setState({ products: productData.results });
-  //   } catch (error) {
-  //     console.error('Error fetching product data:', error);
-  //   }
-  // };
 
   handleBrandFilterChange = (event) => {
     const selectedBrand = event.target.value;
@@ -44,18 +15,20 @@ class ProductList extends Component {
       const updatedBrands = [...prevState.brandFilter];
 
       if (selectedBrand === 'allBrands') {
-        return { brandFilter: ['allBrands'] };
+        return { brandFilter: ['allBrands'] }; 
       }
 
       const index = updatedBrands.indexOf(selectedBrand);
 
       if (index === -1) {
-        updatedBrands.push(selectedBrand);
+        updatedBrands.push(selectedBrand); 
       } else {
-        updatedBrands.splice(index, 1);
+        updatedBrands.splice(index, 1); 
       }
 
-      return { brandFilter: updatedBrands };
+      const filteredBrands = updatedBrands.filter((brand) => brand !== 'allBrands');
+
+      return { brandFilter: filteredBrands.length ? filteredBrands : ['allBrands'] };
     });
   };
 
@@ -72,30 +45,34 @@ class ProductList extends Component {
       const index = updatedCompanies.indexOf(selectedCompany);
 
       if (index === -1) {
-        updatedCompanies.push(selectedCompany);
+        updatedCompanies.push(selectedCompany); 
       } else {
-        updatedCompanies.splice(index, 1);
+        updatedCompanies.splice(index, 1); 
       }
 
-      return { companyFilter: updatedCompanies };
+      const filteredCompanies = updatedCompanies.filter((company) => company !== 'allCompanies');
+
+      return { companyFilter: filteredCompanies.length ? filteredCompanies : ['allCompanies'] };
     });
   };
 
   render() {
-    const { products, brandFilter, companyFilter, isListVisible } = this.state;
+    const { brandFilter, companyFilter } = this.state;
 
-    const uniqueBrands = [...new Set(products.map((product) => product.brand))];
-    const uniqueCompanies = [...new Set(products.map((product) => product.company))];
+    
+    const uniqueBrands = [...new Set(product.map((item) => item.brand))];
+    const uniqueCompanies = [...new Set(product.map((item) => item.company))];
 
-    const filteredProducts = products.filter((product) => {
+    const filteredProducts = product.filter((item) => {
       const brandMatch =
         brandFilter.length === 1 && brandFilter[0] === 'allBrands'
           ? true
-          : brandFilter.includes(product.brand);
+          : brandFilter.includes(item.brand);
+
       const companyMatch =
         companyFilter.length === 1 && companyFilter[0] === 'allCompanies'
           ? true
-          : companyFilter.includes(product.company);
+          : companyFilter.includes(item.company);
 
       return brandMatch && companyMatch;
     });
@@ -103,17 +80,27 @@ class ProductList extends Component {
     return (
       <div className='prodlistbrod'>
         <div className='prodlistoutdiv'>
-          <div className='prodfilter'>
-              <p>Filter </p>
+          <div  className='prodfilter'>
+            <p>Filter</p>
+              <div>
             <div className='prodcol'>
-            
+
               <span>Brand:</span>
+              <div>
+                <input
+                  type='checkbox'
+                  id='allBrands'
+                  value='allBrands'
+                  checked={brandFilter.includes('allBrands')}
+                  onChange={this.handleBrandFilterChange}
+                />
+                <label htmlFor='allBrands'>All Brands</label>
+              </div>
               {uniqueBrands.map((brand) => (
                 <div key={brand}>
                   <input
-                    type="checkbox"
+                    type='checkbox'
                     id={brand}
-                    name="brandFilter"
                     value={brand}
                     checked={brandFilter.includes(brand)}
                     onChange={this.handleBrandFilterChange}
@@ -124,13 +111,22 @@ class ProductList extends Component {
             </div>
 
             <div className='prodcol'>
-              <span> Company:</span>
+              <span>Company:</span>
+              <div>
+                <input
+                  type='checkbox'
+                  id='allCompanies'
+                  value='allCompanies'
+                  checked={companyFilter.includes('allCompanies')}
+                  onChange={this.handleCompanyFilterChange}
+                />
+                <label htmlFor='allCompanies'>All Companies</label>
+              </div>
               {uniqueCompanies.map((company) => (
                 <div key={company}>
                   <input
-                    type="checkbox"
+                    type='checkbox'
                     id={company}
-                    name="companyFilter"
                     value={company}
                     checked={companyFilter.includes(company)}
                     onChange={this.handleCompanyFilterChange}
@@ -140,27 +136,22 @@ class ProductList extends Component {
               ))}
             </div>
           </div>
-          <div>
-          {isListVisible && (
-  <div className='listprobrod'>
-    {filteredProducts.map((product) => {
-      const newBaseURL = `${baseURL}`;
-      const imagePathWithoutBaseURL = product.image.replace('https://0.0.0.0:9090', newBaseURL);
+          </div>
 
-      return (
-        <div className='probrod' key={product.id}>
-           <div>  {product.image && <img src={imagePathWithoutBaseURL} alt={product.name} />}
-       
-            <Link to={`${product.id}`}>{product.name}</Link>
+          <div className='listprobrod'>
+            {filteredProducts.map((item) => (
+              <div className='probrod' key={item.id}>
+                <div>
+                  <img src={item.product_link || '/placeholder.jpg'} alt={item.name}  width={200} height={200}/>
+
+                  <Link to={`${item.id}`}>{item.name}</Link>
+         
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      );
-    })}
-  </div>
-)}
-  </div>
- </div>
- </div>
+      </div>
     );
   }
 }

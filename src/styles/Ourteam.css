@@ -1,120 +1,119 @@
-.teambroder{
-    padding: 120px 70px 0 90px;
-    @media (max-width: 1040px) {
-        padding: 60px 20px;
-
-    }
+.teambroder {
+  padding: 120px 70px 0 90px;
+  @media (max-width: 1040px) {
+    padding: 60px 20px;
+  }
 }
 
-.teamrow{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.teamrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.teamcol{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: clamp(15px, 2vw, 30px);
+.teamcol {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: clamp(15px, 2vw, 30px);
 }
-.teamcol  h1{
-    color: #151515;
-    font-size: clamp(30px,4vw,50px);
-    font-style: normal;
-    font-weight: 600;
-    line-height: 38.4px; 
-    letter-spacing: 0.5px;
-    font-family: Sora;
+.teamcol h1 {
+  color: #151515;
+  font-size: clamp(30px, 4vw, 50px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38.4px;
+  letter-spacing: 0.5px;
+  font-family: Sora;
 }
 .teamcol div {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    gap: clamp(10px, 2vw, 15px);
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: clamp(10px, 2vw, 15px);
 }
 
-.teamcol div  img {
-    width: 6vw; 
-    min-width: 60px;
-    height: auto; 
-   
+.teamcol div img {
+  width: 6vw;
+  min-width: 60px;
+  height: auto;
 }
 .teamcol div {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-start; 
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
 }
-.teamcol div div{
-    display: flex;
-    padding-top: 25px;
-    flex-direction: column;
-    gap: 1px;
-    flex-wrap: nowrap;
-    
+.teamcol div div {
+  display: flex;
+  padding-top: 25px;
+  flex-direction: column;
+  gap: 1px;
+  flex-wrap: nowrap;
 }
 
 .teamcol div div h5 {
-    color: #151515;
-    font-family: Manrope;
-    font-size: clamp(12px,2vw,18px);
-    font-style: normal;
-    font-weight: 700;
-    line-height: 160%;
-    margin: 0; /* Remove any default margins */
+  color: #151515;
+  font-family: Manrope;
+  font-size: clamp(12px, 2vw, 18px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+  margin: 0;
 }
 
 .teamcol div div h6 {
-    color: #151515;
-    flex-wrap: wrap;
-    font-size: clamp(12px,2vw,18px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-    font-family: Manrope;
-    text-wrap: balance;
-    margin: 0; /* Remove any default margins */
+  color: #151515;
+  flex-wrap: wrap;
+  font-size: clamp(12px, 2vw, 18px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  font-family: Manrope;
+  text-wrap: balance;
+  margin: 0;
 }
 
-.teamcol2{
-    display: flex;
-   max-width: 711.51px;
-   padding: 70px ;
-   flex-direction: column;
-   align-items: flex-start;
-   flex-shrink: 0;
-    border-radius: 20px;
-   background: var(--BG-g1, linear-gradient(283deg, #B048FF -174.56%, rgba(145, 0, 255, 0.00) 109.23%));
+.teamcol2 {
+  display: flex;
+  max-width: 711.51px;
+  padding: 70px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: var(
+    --BG-g1,
+    linear-gradient(283deg, #b048ff -174.56%, rgba(145, 0, 255, 0) 109.23%)
+  );
 }
 @media (max-width: 1040px) {
-    .teamcol2 {
-        padding: 3vw; 
-        margin-top: 20px;
-    }
+  .teamcol2 {
+    padding: 3vw;
+    margin-top: 20px;
+  }
 }
 
 .teamcol2 p {
-    color: #151515;
-    font-size: clamp(20px,2.5vw,32px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%; /* 51.2px */
-    font-family: Manrope;
-
+  color: #151515;
+  font-size: clamp(20px, 2.5vw, 32px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  font-family: Manrope;
 }
-.teamcol2  h6{
-    color: #151515;
-font-family: Manrope;
-font-size: clamp(15px,1.6vw,18px);
-font-style: normal;
-font-weight: 700;
-line-height: 321.5%;
+.teamcol2 h6 {
+  color: #151515;
+  font-family: Manrope;
+  font-size: clamp(15px, 1.6vw, 18px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 321.5%;
 }
-.teamcol2 span{
-    color: #151515;
-    font-size: clamp(15px,1.6vw,18px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-    font-family: Manrope;
+.teamcol2 span {
+  color: #151515;
+  font-size: clamp(15px, 1.6vw, 18px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  font-family: Manrope;
 }

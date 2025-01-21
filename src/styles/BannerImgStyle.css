@@ -1,4 +1,3 @@
-
 .ban {
   display: flex;
   padding: 50px 70px;
@@ -6,145 +5,141 @@
   background-color: #450079;
   column-gap: 200px;
   @media (max-width: 768px) {
-    padding: 20px 20px ;
+    padding: 20px 20px;
   }
 }
 
-.banner{
+.banner {
   display: flex;
-width:fit-content;
-justify-content: space-between;
-align-items: center;
+  width: fit-content;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.banner-info{
+.banner-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 3vw;
-    }
-    .banner-info span {
-      color: #FFF;
-      font-family: Sora;
-      font-size: clamp(40px,7vw,60px) ;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 38.4px; /* 64% */
-      letter-spacing: 0.5px;
-    white-space: nowrap;  
-      }
-      .banner-info p{
-        display: block;
-        color: #FFF;
-        font-family: Manrope;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%; /* 28.8px */
-        letter-spacing: 0.5px; 
-        overflow: hidden; 
-        text-overflow: ellipsis;
-        width: fit-content; 
-        text-wrap: balance;
- 
-      }
-      .banner-image-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        height: 100%;
-      }
-      
-      .banner-image {
-        width: 663.144px;
-        height: 463.144px;
-        flex-shrink: 0;
-        position: relative;
-        z-index: 1;
-      }
-      
-      .banner-shadow {
-        width: 523.144px;
-        height: 463.144px;
-        transform: rotate(-89.572deg);
-        flex-shrink: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 0;
-      }
-     
-      .banner-shadow::before {
-        content: "";
-        position: absolute;
-        top: 65vw;
-        left: -14vw;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        background: #B455FF;
-        filter: blur(77.5px);
-        animation: oscillate 4s ease-in-out infinite;
-      
-      }
-    
-      .Ellipse-image {
-        width: 210.641px;
-        height: 210.641px;
-        flex-shrink: 0;
-        position: relative;
-        top: -210px;
-        left: -50px;
-        z-index: 2; 
-      }
-      
-     @keyframes oscillate {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(100px);
-    }
-    100% {
-        transform: translateX(0);
-    }
+}
+.banner-info span {
+  color: #fff;
+  font-family: Sora;
+  font-size: clamp(40px, 7vw, 60px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38.4px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+.banner-info p {
+  display: block;
+  color: #fff;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: fit-content;
+  text-wrap: balance;
+}
+.banner-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.banner-image {
+  width: 663.144px;
+  height: 463.144px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.banner-shadow {
+  width: 523.144px;
+  height: 463.144px;
+  transform: rotate(-89.572deg);
+  flex-shrink: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.banner-shadow::before {
+  content: "";
+  position: absolute;
+  top: 65vw;
+  left: -14vw;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #b455ff;
+  filter: blur(77.5px);
+  animation: oscillate 4s ease-in-out infinite;
+}
+
+.Ellipse-image {
+  width: 210.641px;
+  height: 210.641px;
+  flex-shrink: 0;
+  position: relative;
+  top: -210px;
+  left: -50px;
+  z-index: 2;
+}
+
+@keyframes oscillate {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 @media screen and (max-width: 1040px) {
   .ban {
-    flex-direction: column; 
+    flex-direction: column;
     row-gap: 100px;
   }
 
-  .banner-info p{
-    color: #FFF;
+  .banner-info p {
+    color: #fff;
     font-family: Manrope;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; 
+    line-height: 160%;
     letter-spacing: 0.5px;
-    width: fit-content; 
+    width: fit-content;
   }
 
   .banner-info p {
-   
-    overflow: visible; 
-    text-overflow: unset; 
-    color: #FFF;
+    overflow: visible;
+    text-overflow: unset;
+    color: #fff;
     font-family: Manrope;
   }
 
-  .banner-image-container{
-    display: none;  
+  .banner-image-container {
+    display: none;
   }
 
   .banner-shadow {
-    display: none; 
+    display: none;
   }
-
 }
 @media screen and (min-width: 1700px) {
   .banner-shadow {
-    display: none; 
+    display: none;
   }
 }

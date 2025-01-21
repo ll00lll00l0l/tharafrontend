@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Sora:100,200,300,regular,500,600,700,800');
+@import url("https://fonts.googleapis.com/css?family=Sora:100,200,300,regular,500,600,700,800");
 
-
-.mcontain{
+.mcontain {
   align-items: center;
   padding: 81px 0px 90px 70px;
   @media (max-width: 1040px) {
@@ -9,109 +8,101 @@
   }
 }
 
-
 .mgrid-container {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-  }
- 
-  .mgrid-item1 {
-    display: flex;
-    gap: 36px 41px;
-    justify-content:center;
-    flex-wrap: wrap;
- 
-  }
-  .mgrid-child {
-    flex: 2 1 200px;
-    max-width: 289px;
-    border-radius: 20px;
-    border: 1px solid #AEAEAE;
-    height: 253px;
-    color: #fff;
-    background: radial-gradient(circle at 0% 0%, #450079 50%, transparent 0%);
-    background-position: 100% 50%;
-    background-size: 400% 400%;
-    transition: background 800ms ease-in-out;
-  }
-  
-  .mgrid-child:hover {
-    background-position: 0% 0%;
-    color: #fff; /* You can keep this line if you want to change the text color on hover */
-  }
- 
-  
-  .mgrid-child span{
-    color: #1B1B1B;
-    font-family: Manrope;
-    font-size: clamp(30px,6vw,40px);
-    font-style: normal;
-    font-weight: 700;
-    line-height: 123%; /* 49.2px */
-    letter-spacing: -1.2px;
-    text-transform: capitalize;
-    padding: 24px 35px 67px 31px;
-  }
-  .mgrid-child:hover span ,
-  .mgrid-child:hover p{
-    color: #FFF;
-  }
-  .mgrid-child:hover svg circle{ 
-    fill: #261549;
-  }
-  .mgrid-child:hover svg  path {
-    stroke: #FFF; /* Change this to your desired hover color */
-  }
-  .mimage-container {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    padding: 25px;
-  }
-  
-  .msvg-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+.mgrid-item1 {
+  display: flex;
+  gap: 36px 41px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.mgrid-child {
+  flex: 2 1 200px;
+  max-width: 289px;
+  border-radius: 20px;
+  border: 1px solid #aeaeae;
+  height: 253px;
+  color: #fff;
+  background: radial-gradient(circle at 0% 0%, #450079 50%, transparent 0%);
+  background-position: 100% 50%;
+  background-size: 400% 400%;
+  transition: background 800ms ease-in-out;
+}
 
-  .mgrid-item2{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: clamp(5px,2vw,50px);
-  }
-  .mgrid-item2 span{
-    color: #151515;
-    font-size: clamp(35px,4vw,50px);
-    font-family: Sora;
-    font-weight: 600;
-    line-height: 38.4px; /* 76.8% */
-    letter-spacing: 0.5px;
-    font-style: normal;
-    margin-top: clamp(20px,10vw,70px);
-    padding-bottom: clamp(20px,4vw,70px);
-  }
-  .mgrid-item2 p{
-    color: #151515;
-    font-family: Manrope;
-    font-size: clamp(18px,4vw,32px);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%; /* 51.2px */
-    text-wrap: wrap;
-    width: 80%;
-  }
- 
-  
+.mgrid-child:hover {
+  background-position: 0% 0%;
+  color: #fff;
+}
 
+.mgrid-child span {
+  color: #1b1b1b;
+  font-family: Manrope;
+  font-size: clamp(30px, 6vw, 40px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 123%;
+  letter-spacing: -1.2px;
+  text-transform: capitalize;
+  padding: 24px 35px 67px 31px;
+}
+.mgrid-child:hover span,
+.mgrid-child:hover p {
+  color: #fff;
+}
+.mgrid-child:hover svg circle {
+  fill: #261549;
+}
+.mgrid-child:hover svg path {
+  stroke: #fff;
+}
+.mimage-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 25px;
+}
 
-  .mEllipse-img{
-      height: 59.33px;
-      flex-shrink: 0;
-      width: 59.33px;
-  }
- 
+.msvg-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mgrid-item2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(5px, 2vw, 50px);
+}
+.mgrid-item2 span {
+  color: #151515;
+  font-size: clamp(35px, 4vw, 50px);
+  font-family: Sora;
+  font-weight: 600;
+  line-height: 38.4px;
+  letter-spacing: 0.5px;
+  font-style: normal;
+  margin-top: clamp(20px, 10vw, 70px);
+  padding-bottom: clamp(20px, 4vw, 70px);
+}
+.mgrid-item2 p {
+  color: #151515;
+  font-family: Manrope;
+  font-size: clamp(18px, 4vw, 32px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  text-wrap: wrap;
+  width: 80%;
+}
+
+.mEllipse-img {
+  height: 59.33px;
+  flex-shrink: 0;
+  width: 59.33px;
+}
